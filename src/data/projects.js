@@ -14,7 +14,7 @@ export const projects = [
     tags: ['Cartons', 'Gift sets', 'Labels', 'Pouches'],
     cover: 'packaging/01',
     tone: '#7A1F2B',
-    intro: 'Cartons, tubes, tins, jars and gift sets for personal care, wellness and home brands, designed as product families so a full range reads as one on shelf.',
+    intro: 'Cartons, tubes, tins, jars and gift sets, designed as product families so a full range reads as one on shelf.',
   },
   {
     slug: 'social-media',
@@ -23,7 +23,7 @@ export const projects = [
     tags: ['Posts', 'Carousels', 'Launches', 'Offers'],
     cover: 'social-media/08',
     tone: '#E08A2C',
-    intro: 'Always-on and campaign content for direct-to-consumer brands: launches, offers, education and seasonal moments, built to stop the scroll and earn the click.',
+    intro: 'Always-on and campaign content: launches, offers, education and seasonal moments, built to stop the scroll and earn the click.',
   },
   {
     slug: 'performance-marketing',

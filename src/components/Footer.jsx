@@ -44,7 +44,7 @@ export default function Footer() {
               <span className="contact__label">{l.label}</span>
               <span className="contact__arrow" aria-hidden="true">↗</span>
             </a>
-            <span className="contact__handle mono">{l.handle}</span>
+            <span className="contact__handle">{l.handle}</span>
             <CopyButton value={l.handle} what={l.label} />
           </li>
         ))}

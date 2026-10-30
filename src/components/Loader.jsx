@@ -90,7 +90,7 @@ export default function Loader({ onDone }) {
       </div>
       <div className="loader__meta loader__meta--foot">
         <span className="mono" ref={count}>000</span>
-        <span className="mono">Design · Motion · Content</span>
+        <span className="mono">Creative direction · since 2015</span>
       </div>
     </div>
   )

@@ -3,14 +3,20 @@ export const site = {
   name: 'Mobeen Saifi',
   role: 'Creative Director',
   city: 'Dubai',
-  headline: 'I lead how brands look, sell & move.',
-  intro: 'Creative director for consumer brands. I lead brand, packaging, campaign and motion work from first strategy to final launch.',
-  facts: ['11 years', 'UAE driving license', 'On-site or remote'],
+  headline: 'I make brands impossible to scroll past.',
+  intro: 'Eleven years leading design across every touchpoint a brand has: the identity, the pack on the shelf, and the ads, emailers and films that sell it. Now leading design at a 360° agency in Dubai.',
+  // The credentials row under the hero introduction.
+  credentials: [
+    { label: 'Experience', value: '11 years, since 2015' },
+    { label: 'Now', value: 'Design lead, 360° agency, Dubai' },
+    { label: 'Languages', value: 'Arabic & English design' },
+    { label: 'Mobility', value: 'UAE driving license' },
+  ],
   cv: {
     file: 'cv/Mobeen-Saifi-CV.pdf',
     size: '360 KB',
     title: 'Senior Graphic Designer',
-    summary: '11 years in branding, packaging and digital advertising for skincare, Ayurveda and personal-care brands. Leads teams and production from concept to print.',
+    summary: '11 years in branding, packaging and digital advertising. Leads teams and production from concept to print, in Arabic and English.',
     // From the CV, most recent first. `current` shows the Current badge.
     roles: [
       { from: 'Apr 2024', to: 'Present', current: true, role: 'Graphic Designer', company: 'Niche Marketing Management', place: 'Dubai, UAE', line: 'Leads all design, digital and Arabic & English work for a 360° marketing agency.' },

@@ -38,7 +38,7 @@ export default function Hero() {
       .from('.hero__glow', { autoAlpha: 0, duration: 2 }, 0.6)
       .from('.hero__bar > *', { y: 12, autoAlpha: 0, duration: 1, stagger: 0.08 }, 0.4)
       .from('.hero__head .w > span', { y: '0.35em', autoAlpha: 0, filter: 'blur(10px)', duration: 1.4, stagger: 0.05 }, 0.6)
-      .from('.hero__intro, .hero__facts li, .hero__cta > *', { y: 16, autoAlpha: 0, duration: 1, stagger: 0.05 }, 1.1)
+      .from('.hero__intro, .hero__creds > div, .hero__cta > *', { y: 16, autoAlpha: 0, duration: 1, stagger: 0.05 }, 1.1)
     const off = onReveal(() => tl.play())
 
     gsap.to('.hero__glow', { opacity: 0.5, scale: 1.08, duration: 4.5, ease: 'sine.inOut', yoyo: true, repeat: -1 })
@@ -84,12 +84,21 @@ export default function Hero() {
       el.className = 'hero__thought mono'
       el.textContent = p.title
       box.appendChild(el)
-      const side = i % 2 ? 1 : -1
+      // Two lanes in picture coordinates: right of the head, and upper left of it.
+      // Phones show a narrow portrait crop, so the lanes sit closer in and drift less.
+      const small = phone()
+      const lane = i % 2
+        ? (small ? { left: '68%', top: '30%', side: 0.35 } : { left: '74%', top: '33%', side: 1 })
+        : (small ? { left: '53%', top: '22%', side: -0.35 } : { left: '50%', top: '25%', side: -1 })
+      el.style.left = lane.left
+      el.style.top = lane.top
+      const side = lane.side
       // Rise in proportion to the frame, so the labels fade before its top edge.
       const H = box.parentElement.offsetHeight
       gsap.timeline({ onComplete: () => el.remove() })
-        .fromTo(el, { x: side * 10, y: 10, scale: 0.85, autoAlpha: 0, filter: 'blur(6px)' }, { x: side * 34, y: -H * 0.05, scale: 1, autoAlpha: 1, filter: 'blur(0px)', duration: 1.6, ease: 'power2.out' })
-        .to(el, { x: side * 60, y: -H * 0.13, autoAlpha: 0, filter: 'blur(4px)', duration: 2.2, ease: 'power1.in' })
+        .fromTo(el, { x: side * 10, y: 12, scale: 0.7, autoAlpha: 0 }, { x: side * 40, y: -H * 0.03, scale: 1, autoAlpha: 1, duration: 0.9, ease: 'back.out(1.7)' })
+        .to(el, { x: side * 56, y: -H * 0.06, duration: 1.6, ease: 'sine.inOut' })
+        .to(el, { x: side * 72, y: -H * 0.1, autoAlpha: 0, duration: 1.1, ease: 'power1.in' })
     }
     const start = setTimeout(() => {
       think()
@@ -181,12 +190,17 @@ export default function Hero() {
       <div className="hero__copy">
         <h1 className="hero__head"><Words text={site.headline} /></h1>
         <p className="hero__intro">{site.intro}</p>
-        <ul className="hero__facts mono">
-          {site.facts.map(f => <li key={f}>{f}</li>)}
-        </ul>
+        <dl className="hero__creds">
+          {site.credentials.map(c => (
+            <div key={c.label}>
+              <dt className="mono">{c.label}</dt>
+              <dd>{c.value}</dd>
+            </div>
+          ))}
+        </dl>
         <div className="hero__cta">
           <button className="pill pill--solid" onClick={() => scrollTo('#work')} data-cursor="Scroll">See the work ↓</button>
-          <button className="pill" onClick={() => scrollTo('#contact')} data-cursor="Contact">Get in touch</button>
+          <a className="pill" href={url(site.cv.file)} download="Mobeen-Saifi-CV.pdf" data-cursor="Download">Download CV</a>
         </div>
       </div>
     </section>

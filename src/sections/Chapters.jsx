@@ -186,7 +186,7 @@ function Chapter({ p, n }) {
   )
 }
 
-// Phones: a strip is a swipeable carousel that also advances on its own.
+// Phones: a strip is a left-aligned swipeable carousel that also advances on its own.
 // One piece every few seconds, looping to the start, only while on screen;
 // any touch pauses it, and it resumes a few seconds after the last one.
 function useAutoplay(ref) {
@@ -204,12 +204,12 @@ function useAutoplay(ref) {
     el.addEventListener('wheel', hold, opts)
     const step = () => {
       if (!visible || Date.now() < idleUntil || document.hidden) return
+      // Cards snap to the left margin, so step to the next card's left edge.
+      const pad = parseFloat(getComputedStyle(el).scrollPaddingLeft) || 0
       const cells = [...el.querySelectorAll('.chap__cell')]
-      const mid = el.scrollLeft + el.clientWidth / 2
-      const next = cells.find(c => c.offsetLeft + c.offsetWidth / 2 > mid + 4)
+      const next = cells.find(c => c.offsetLeft - pad > el.scrollLeft + 4)
       const atEnd = !next || el.scrollLeft + el.clientWidth >= el.scrollWidth - 4
-      const left = atEnd ? 0 : next.offsetLeft + next.offsetWidth / 2 - el.clientWidth / 2
-      el.scrollTo({ left, behavior: 'smooth' })
+      el.scrollTo({ left: atEnd ? 0 : next.offsetLeft - pad, behavior: 'smooth' })
     }
     const timer = setInterval(step, 2800)
     return () => {
@@ -230,11 +230,14 @@ function Strip({ items, title, show }) {
   useEffect(() => {
     const el = win.current
     const onScroll = () => {
-      const mid = el.scrollLeft + el.clientWidth / 2
+      const pad = parseFloat(getComputedStyle(el).scrollPaddingLeft) || 0
+      const x = el.scrollLeft + pad
       const cells = [...el.querySelectorAll('.chap__cell')]
+      // At the far end the last card can't reach the margin, so count it as current.
+      const end = el.scrollLeft + el.clientWidth >= el.scrollWidth - 4
       let best = 0
-      cells.forEach((c, i) => { if (Math.abs(c.offsetLeft + c.offsetWidth / 2 - mid) < Math.abs(cells[best].offsetLeft + cells[best].offsetWidth / 2 - mid)) best = i })
-      setAt(best)
+      cells.forEach((c, i) => { if (Math.abs(c.offsetLeft - x) < Math.abs(cells[best].offsetLeft - x)) best = i })
+      setAt(end ? cells.length - 1 : best)
     }
     el.addEventListener('scroll', onScroll, { passive: true })
     return () => el.removeEventListener('scroll', onScroll)

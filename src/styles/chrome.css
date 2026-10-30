@@ -157,7 +157,7 @@ html.has-cursor, html.has-cursor a, html.has-cursor button, html.has-cursor [dat
   position: absolute;
   left: 50%;
   top: 50%;
-  height: clamp(180px, 34vh, 380px);
+  height: min(clamp(180px, 34vh, 380px), 56vw);
   width: auto;
   max-width: none;
   translate: -50% -50%;
@@ -232,10 +232,21 @@ html.has-cursor, html.has-cursor a, html.has-cursor button, html.has-cursor [dat
   --mute: #8f897f;
 }
 .contact > *:not(.contact__lattice) { position: relative; }
-.contact__lattice { position: absolute; inset: 0; width: 100%; height: 100%; color: var(--gold); opacity: 0.12; pointer-events: none; }
+.contact__lattice {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  color: var(--gold);
+  opacity: 0.14;
+  pointer-events: none;
+  /* The pattern frames the section (top and bottom) and fades out behind the text. */
+  -webkit-mask-image: linear-gradient(180deg, #000 0, transparent 26%, transparent 70%, #000 100%);
+  mask-image: linear-gradient(180deg, #000 0, transparent 26%, transparent 70%, #000 100%);
+}
 .contact__hello { display: flex; align-items: baseline; gap: 14px; margin-bottom: 4vh; color: var(--gold); }
 .contact__hello .ar { font-size: clamp(28px, 3vw, 48px); }
-.contact__note { max-width: 46ch; margin-top: 4vh; font-size: 17px; line-height: 1.5; color: rgba(237, 234, 228, 0.75); }
+.contact__note { max-width: 46ch; margin-top: 4vh; font-size: 17px; line-height: 1.55; color: rgba(237, 234, 228, 0.86); }
 .contact__skyline { display: block; width: 100%; height: auto; margin-top: 12vh; color: var(--gold); }
 .contact__title {
   font-size: clamp(44px, 8.4vw, 160px);
@@ -266,15 +277,15 @@ html.has-cursor, html.has-cursor a, html.has-cursor button, html.has-cursor [dat
 .contact__arrow { font-size: clamp(18px, 1.8vw, 30px); opacity: 0.5; transition: transform 0.7s var(--ease), color 0.3s, opacity 0.3s; }
 .contact__open:hover .contact__label { transform: translateX(0.4vw); color: var(--gold); }
 .contact__open:hover .contact__arrow { transform: rotate(45deg); color: var(--gold); opacity: 1; }
-.contact__handle { color: var(--mute); font-size: 12px; user-select: all; }
+.contact__handle { color: rgba(237, 234, 228, 0.78); font-size: 16px; letter-spacing: 0; user-select: all; }
 .contact__copy {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  padding: 9px 14px 8px;
+  padding: 10px 15px 9px;
   border-radius: 999px;
-  border: 1px solid var(--line);
-  color: rgba(237, 234, 228, 0.8);
+  border: 1px solid rgba(237, 234, 228, 0.32);
+  color: var(--paper);
   transition: background-color 0.3s, color 0.3s, border-color 0.3s;
 }
 .contact__copy svg { width: 14px; height: 14px; }
@@ -296,11 +307,14 @@ html.has-cursor, html.has-cursor a, html.has-cursor button, html.has-cursor [dat
 @media (max-width: 700px) {
   .contact { padding-top: 96px; }
   .contact__hello { margin-bottom: 20px; }
-  .contact__note { margin-top: 20px; font-size: 15px; }
+  .contact__note { margin-top: 20px; font-size: 16px; }
+  .contact__lattice { opacity: 0.1; -webkit-mask-image: linear-gradient(180deg, #000 0, transparent 14%, transparent 80%, #000 100%); mask-image: linear-gradient(180deg, #000 0, transparent 14%, transparent 80%, #000 100%); }
+  .contact__label { font-size: 26px; }
+  .contact__handle { font-size: 15px; }
   .contact__links { margin-top: 48px; }
   .contact__skyline { margin-top: 56px; }
   .contact__base { padding: 24px 0 calc(24px + env(safe-area-inset-bottom)); }
-  .contact__row { grid-template-columns: 1fr auto; row-gap: 8px; padding: 18px 0; }
+  .contact__row { grid-template-columns: 1fr auto; row-gap: 6px; column-gap: 16px; padding: 22px 0; }
   .contact__handle { grid-column: 1; grid-row: 2; }
   .contact__copy { grid-column: 2; grid-row: 1 / 3; }
 }
