@@ -1523,6 +1523,14 @@
   "h": 681,
   "color": "#f8f8f8"
  },
+ "site/portrait": {
+  "kind": "image",
+  "src": "media/site/portrait.webp",
+  "sm": "media/site/portrait-sm.webp",
+  "w": 322,
+  "h": 313,
+  "color": "#080808"
+ },
  "social-media/01": {
   "kind": "gif",
   "src": "media/social-media/01.webp",

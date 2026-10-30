@@ -1,15 +1,14 @@
-import { useRef } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import gsap from 'gsap'
 import { useGSAP } from '@gsap/react'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { projects } from '../data/projects.js'
 import { duration, pieces, sample, url } from '../lib/media.js'
-import { reduced, toneTrigger } from '../lib/smooth.js'
+import { reduced, scrollTo, toneTrigger } from '../lib/smooth.js'
 import { TLink } from '../lib/transition.jsx'
 import { useLightbox } from '../components/Lightbox.jsx'
 import Plate from '../components/Plate.jsx'
 import VideoTile from '../components/VideoTile.jsx'
-import Floater from '../components/Floater.jsx'
-import Flag from '../components/Flag.jsx'
 
 // One chapter per type of work. Each is shown the way that kind of work is
 // best seen; every piece keeps its true proportions.
@@ -24,40 +23,70 @@ const VIEW = {
   print: { kind: 'strip', take: 8 },
 }
 
-// Stickers pinned loosely to some chapters. They drift with the scroll and can be dragged.
-const STICKERS = {
-  packaging: {
-    pos: { right: '8vw', top: '6vh' }, tilt: 7,
-    body: <span className="sticker sticker--flag"><Flag /> Dubai-based. Brief me from anywhere.</span>,
-  },
-  branding: {
-    pos: { left: '46vw', top: '2vh' }, tilt: -8, speed: 1.3,
-    body: (
-      <span className="sticker sticker--ink">
-        <svg viewBox="0 0 24 24" className="sticker__icon" aria-hidden="true"><path d="M12 2l2.2 6.6L21 11l-6.8 2.4L12 20l-2.2-6.6L3 11l6.8-2.4z" /></svg>
-        AI in the workflow, every single day
-      </span>
-    ),
-  },
-  'web-banners': {
-    pos: { right: '10vw', top: '4vh' }, tilt: 6, speed: 1.1,
-    body: (
-      <span className="sticker sticker--red">
-        <svg viewBox="0 0 32 20" className="sticker__icon sticker__car" aria-hidden="true">
-          <path d="M4 13l2-6c.4-1.2 1.4-2 2.7-2h12.6c1.3 0 2.3.8 2.7 2l2 6v4h-3v-2H7v2H4z" />
-          <circle cx="9" cy="13" r="1.6" /><circle cx="23" cy="13" r="1.6" />
-        </svg>
-        Dubai driving license. Happy to drive to your shoot.
-      </span>
-    ),
-  },
-}
-
 export default function Chapters() {
-  return projects.map((p, i) => <Chapter key={p.slug} p={p} n={i + 1} first={i === 0} />)
+  return (
+    <div className="chapters">
+      <CategoryBar />
+      {projects.map((p, i) => <Chapter key={p.slug} p={p} n={i + 1} />)}
+    </div>
+  )
 }
 
-function Chapter({ p, n, first }) {
+// While the work is on screen, every category sits in a bar at the top of the
+// page. The one you are reading is filled in; a click glides to another.
+function CategoryBar() {
+  const bar = useRef()
+  const [active, setActive] = useState(projects[0].slug)
+
+  useGSAP(() => {
+    const el = bar.current
+    ScrollTrigger.create({
+      trigger: '.chapters',
+      start: 'top 45%',
+      end: 'bottom 55%',
+      onToggle: self => el.classList.toggle('is-on', self.isActive),
+    })
+    projects.forEach(p => {
+      ScrollTrigger.create({
+        trigger: `#c-${p.slug}`,
+        start: 'top 50%',
+        end: 'bottom 50%',
+        onToggle: self => self.isActive && setActive(p.slug),
+      })
+    })
+  })
+
+  // Keep the active pill in view when the bar scrolls sideways on small screens.
+  useEffect(() => {
+    const pill = bar.current?.querySelector('.catbar__pill.is-active')
+    const track = bar.current?.querySelector('.catbar__track')
+    if (pill && track) track.scrollTo({ left: pill.offsetLeft - track.clientWidth / 2 + pill.offsetWidth / 2, behavior: 'smooth' })
+  }, [active])
+
+  const go = slug => {
+    const nav = parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--nav-h')) || 64
+    scrollTo(`#c-${slug}`, { offset: -(nav + 40) })
+  }
+
+  return (
+    <nav className="catbar" ref={bar} aria-label="Jump to a type of work">
+      <div className="catbar__track">
+        {projects.map(p => (
+          <button
+            key={p.slug}
+            className={`catbar__pill${active === p.slug ? ' is-active' : ''}`}
+            onClick={() => go(p.slug)}
+            aria-current={active === p.slug ? 'true' : undefined}
+          >
+            {p.title}
+          </button>
+        ))}
+      </div>
+    </nav>
+  )
+}
+
+function Chapter({ p, n }) {
   const root = useRef()
   const open = useLightbox()
   const view = VIEW[p.slug] ?? { kind: 'grid', take: 8 }
@@ -107,7 +136,9 @@ function Chapter({ p, n, first }) {
   }, { scope: root })
 
   return (
-    <section className={`chap chap--${view.kind}`} id={first ? 'work' : view.kind === 'film' ? 'motion' : undefined} ref={root}>
+    <section className={`chap chap--${view.kind}`} id={`c-${p.slug}`} ref={root}>
+      {n === 1 && <span id="work" className="chap__anchor" />}
+      {view.kind === 'film' && <span id="motion" className="chap__anchor" />}
       <header className="chap__head">
         <span className="mono chap__n">({String(n).padStart(2, '0')})</span>
         <h2 className="chap__title">{p.title}</h2>
@@ -117,11 +148,6 @@ function Chapter({ p, n, first }) {
         </TLink>
       </header>
       <Body kind={view.kind} items={items} title={p.title} show={show} />
-      {STICKERS[p.slug] && (
-        <Floater style={STICKERS[p.slug].pos} tilt={STICKERS[p.slug].tilt} speed={STICKERS[p.slug].speed ?? 1}>
-          {STICKERS[p.slug].body}
-        </Floater>
-      )}
     </section>
   )
 }

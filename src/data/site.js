@@ -3,8 +3,9 @@ export const site = {
   name: 'Mobeen Saifi',
   role: 'Creative Director',
   city: 'Dubai',
-  headline: 'I shape how brands look, sell & move.',
-  intro: 'Twelve years of building brands end to end: identities, packaging that earns its shelf space, social and performance campaigns, motion, web, email and print. Based in Dubai, with AI as an everyday tool rather than a trick.',
+  headline: 'I lead how brands look, sell & move.',
+  intro: 'Creative director leading brand, packaging, campaign and motion work for consumer brands. I own projects from strategy to launch, and deliver.',
+  facts: ['12 years', 'Dubai, UAE', 'UAE driving license', 'On-site or remote'],
   email: 'mubeenxaifi@gmail.com',
   phone: '+971 55 780 5809',
   links: [

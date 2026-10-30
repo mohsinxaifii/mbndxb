@@ -6,6 +6,7 @@
   --ink: #121110;
   --ink-2: #1d1c1a;
   --accent: #d2461f;
+  --gold: #b48a4a;
 
   --bg: var(--paper);
   --fg: var(--ink);
@@ -132,6 +133,10 @@ ul, ol { list-style: none; }
 .reveal.is-in { transform: none; opacity: 1; filter: none; }
 
 /* ---------- Bits ---------- */
+
+/* Arabic words, set in a font that has the glyphs. */
+.ar { font-family: 'Noto Kufi Arabic', var(--sans); font-weight: 500; letter-spacing: 0; }
+.star { display: inline-block; width: 1em; height: 1em; }
 
 .chip {
   border: 1px solid var(--line);

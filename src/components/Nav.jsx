@@ -19,7 +19,9 @@ export default function Nav() {
     let last = 0
     const onScroll = () => {
       const y = window.scrollY
-      el.current.classList.toggle('is-away', y > 160 && y > last)
+      const away = y > 160 && y > last
+      el.current.classList.toggle('is-away', away)
+      document.documentElement.classList.toggle('nav-away', away)
       last = y
     }
     const src = lenis ?? window
@@ -27,7 +29,10 @@ export default function Nav() {
     return () => (src.off ? src.off('scroll', onScroll) : window.removeEventListener('scroll', onScroll))
   }, [])
 
-  useEffect(() => el.current.classList.remove('is-away'), [pathname])
+  useEffect(() => {
+    el.current.classList.remove('is-away')
+    document.documentElement.classList.remove('nav-away')
+  }, [pathname])
 
   return (
     <header className="nav" ref={el}>

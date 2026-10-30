@@ -1,75 +1,51 @@
-import { useEffect, useRef } from 'react'
+import { useRef } from 'react'
 import gsap from 'gsap'
 import { useGSAP } from '@gsap/react'
 import { site } from '../data/site.js'
+import { media } from '../lib/media.js'
 import { onReveal } from '../lib/reveal.js'
-import { finePointer, reduced } from '../lib/smooth.js'
+import { reduced, scrollTo } from '../lib/smooth.js'
 import { Words } from '../components/Split.jsx'
 import Flag from '../components/Flag.jsx'
-import Playground from '../components/Playground.jsx'
-import Floater, { Badge } from '../components/Floater.jsx'
+import Halftone from '../components/Halftone.jsx'
 
-// "I shape how brands look, sell & move." Each of the three verbs acts itself
-// out: the o's in "look" are eyes that follow the pointer, "sell" gets
-// underlined by hand, and "move" sways. Below, the types of work as pills you
-// can throw around.
+// Statement on the left, the portrait as a halftone on the right.
 export default function Hero() {
   const root = useRef()
+  const portrait = media('site/portrait')
 
   useGSAP(() => {
     if (reduced) return
     const tl = gsap.timeline({ paused: true, defaults: { ease: 'expo.out' } })
-      .from('.hero__place, .hero__since', { y: 14, autoAlpha: 0, duration: 1, stagger: 0.08 })
-      .from('.hero__head .w > span, .hero__head .verb', { y: '0.35em', autoAlpha: 0, filter: 'blur(12px)', duration: 1.3, stagger: 0.07 }, 0.1)
-      .fromTo('.sell__line path', { strokeDashoffset: 1 }, { strokeDashoffset: 0, duration: 1.2, ease: 'power2.inOut' }, 1)
-      .from('.hero__intro', { y: 20, autoAlpha: 0, filter: 'blur(8px)', duration: 1.2 }, 0.7)
-    const off = onReveal(() => tl.play())
-
-    // "move": letters sway on their own, forever, gently.
-    gsap.to('.move .ch', { y: '-0.08em', rotation: 4, duration: 0.9, ease: 'sine.inOut', yoyo: true, repeat: -1, stagger: { each: 0.12, from: 'start' } })
-    return off
+      .from('.hero__bar > *', { y: 12, autoAlpha: 0, duration: 1, stagger: 0.08 })
+      .from('.hero__head .w > span', { y: '0.3em', autoAlpha: 0, filter: 'blur(10px)', duration: 1.4, stagger: 0.05 }, 0.1)
+      .from('.hero__intro, .hero__facts li, .hero__cta > *', { y: 14, autoAlpha: 0, duration: 1, stagger: 0.05 }, 0.6)
+    return onReveal(() => tl.play())
   }, { scope: root })
-
-  // "look": pupils follow the pointer.
-  useEffect(() => {
-    if (!finePointer || reduced) return
-    const pupils = [...root.current.querySelectorAll('.eye i')]
-    const move = e => {
-      for (const p of pupils) {
-        const r = p.parentElement.getBoundingClientRect()
-        const a = Math.atan2(e.clientY - (r.top + r.height / 2), e.clientX - (r.left + r.width / 2))
-        const d = r.width * 0.18
-        p.style.transform = `translate(${Math.cos(a) * d}px, ${Math.sin(a) * d}px)`
-      }
-    }
-    window.addEventListener('pointermove', move)
-    return () => window.removeEventListener('pointermove', move)
-  }, [])
 
   return (
     <section className="hero" ref={root}>
       <div className="hero__bar">
-        <p className="hero__place"><Flag /> <span>Dubai, United Arab Emirates</span></p>
-        <p className="hero__since mono">{site.role} · 12 years in</p>
+        <p className="hero__place">
+          <Flag /> <span>Dubai, United Arab Emirates</span> <span className="ar" lang="ar">دبي</span>
+        </p>
+        <p className="mono hero__coords">25.2048° N, 55.2708° E</p>
       </div>
 
-      <h1 className="hero__head" aria-label={site.headline}>
-        <span aria-hidden="true">
-          <Words text="I shape how brands" />{' '}
-          <span className="verb look">l<span className="eye"><i /></span><span className="eye"><i /></span>k</span>,{' '}
-          <span className="verb sell">sell<svg className="sell__line" viewBox="0 0 100 12" preserveAspectRatio="none"><path d="M2 8 C 25 2, 55 12, 98 4" pathLength="1" /></svg></span>{' '}
-          <span className="verb">&amp;</span>{' '}
-          <span className="verb move">{[...'move.'].map((c, i) => <span className="ch" key={i}>{c}</span>)}</span>
-        </span>
-      </h1>
-
-      <p className="hero__intro">{site.intro}</p>
-
-      <Playground />
-
-      <Floater style={{ right: '9vw', top: '26vh' }} speed={0.6} tilt={8}>
-        <Badge text="TWELVE YEARS · OF MAKING BRANDS MOVE · " center="12" />
-      </Floater>
+      <div className="hero__main">
+        <div className="hero__text">
+          <h1 className="hero__head"><Words text={site.headline} /></h1>
+          <p className="hero__intro">{site.intro}</p>
+          <ul className="hero__facts mono">
+            {site.facts.map(f => <li key={f}>{f}</li>)}
+          </ul>
+          <div className="hero__cta">
+            <button className="pill pill--solid" onClick={() => scrollTo('#work')} data-cursor="Scroll">See the work ↓</button>
+            <button className="pill" onClick={() => scrollTo('#contact')} data-cursor="Contact">Get in touch</button>
+          </div>
+        </div>
+        {portrait && <Halftone m={portrait} cols={96} className="hero__portrait" />}
+      </div>
     </section>
   )
 }
