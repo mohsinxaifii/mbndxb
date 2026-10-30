@@ -7,10 +7,9 @@ import { site } from '../data/site.js'
 // First visit only: a quick riffle through the work, like flicking a stack of
 // prints, then the last print opens to fill the screen and lifts away.
 const RIFFLE = [
-  'khadi-essentials/packaging-07', 'social-creatives/posts-03', 'identities/kapha-03', 'sanfe/packaging-07',
-  'cleanex-india/packaging-05', 'the-ayurveda-co/packaging-04', 'jstor/posts-07', 'identities/gmc-02',
-  'social-creatives/posts-14', 'forest-essentials/packaging-01', 'the-ayurveda-co/campaigns-08', 'sanfe/packaging-11',
-  'copfab/print-05', 'the-ayurveda-co/packaging-01',
+  'packaging/07', 'social-media/08', 'branding/11', 'packaging/04', 'web-banners/06', 'social-media/02',
+  'packaging/05', 'branding/09', 'social-media/12', 'print/01', 'packaging/10', 'social-media/20',
+  'emailers/09', 'packaging/01',
 ]
 
 export default function Loader({ onDone }) {
@@ -74,8 +73,8 @@ export default function Loader({ onDone }) {
   return (
     <div className="loader" ref={root} aria-hidden="true">
       <div className="loader__meta">
-        <span className="mono">{site.name}</span>
         <span className="mono">{site.role}</span>
+        <span className="mono">{site.city}</span>
       </div>
       <div className="loader__frame" ref={frame}>
         {picks.map((m, i) => <img key={m.key} src={srcOf(m, i)} alt="" style={{ background: m.color }} />)}

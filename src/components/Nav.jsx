@@ -2,12 +2,12 @@ import { useEffect, useRef } from 'react'
 import { useLocation } from 'react-router-dom'
 import { TLink } from '../lib/transition.jsx'
 import { lenis } from '../lib/smooth.js'
-import { site } from '../data/site.js'
 import Clock from './Clock.jsx'
+import Logo from './Logo.jsx'
 
 const links = [
   { to: '/#work', label: 'Work' },
-  { to: '/work/motion', label: 'Motion' },
+  { to: '/#motion', label: 'Motion' },
   { to: '/#contact', label: 'Contact' },
 ]
 
@@ -32,8 +32,8 @@ export default function Nav() {
 
   return (
     <header className="nav" ref={el}>
-      <TLink to="/" label={site.name} className="nav__mark" aria-label={`${site.name}, home`}>
-        {site.mark}
+      <TLink to="/" label="Home" className="nav__mark" data-cursor="Home">
+        <Logo />
       </TLink>
       <nav className="nav__links" aria-label="Main">
         {links.map((l, i) => (

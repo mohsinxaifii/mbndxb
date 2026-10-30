@@ -1,26 +1,17 @@
 import { useRef } from 'react'
 import gsap from 'gsap'
 import { useGSAP } from '@gsap/react'
-import { media, section, url } from '../lib/media.js'
-import { projects } from '../data/projects.js'
+import { media, url } from '../lib/media.js'
 import { reduced } from '../lib/smooth.js'
-import { TLink } from '../lib/transition.jsx'
 
 // A sentence read at the pace of the scroll. Words light up one by one and
 // small windows open inside the line to show what each phrase means.
 const LINE = [
   'I bring stories to life through',
-  { pill: 'the-ayurveda-co/packaging-04' }, 'packaging people want to pick up,',
-  { pill: 'social-creatives/posts-14' }, 'campaigns that stop the scroll',
-  'and', { pill: 'motion/films-04', video: true }, 'motion that says it in seconds,',
-  'with creativity, execution and a smart use of AI.',
-]
-
-const DISCIPLINES = [
-  { title: 'Packaging', match: 'Packaging', note: 'Cartons, tubes, gift sets' },
-  { title: 'Identity', match: 'Identity', note: 'Marks, stationery, systems' },
-  { title: 'Campaigns', match: 'Campaigns', note: 'Social, banners, emailers' },
-  { title: 'Motion', match: 'Motion', note: 'Films and performance ads' },
+  { pill: 'packaging/05' }, 'packaging people want to pick up,',
+  { pill: 'social-media/12' }, 'posts that stop the scroll,',
+  { pill: 'performance-marketing/05', video: true }, 'ads that earn the tap',
+  'and', { pill: 'motion-graphics/06', video: true }, 'motion that says it in seconds.',
 ]
 
 export default function Statement() {
@@ -33,11 +24,6 @@ export default function Statement() {
     gsap.timeline({ scrollTrigger: { trigger: '.statement__text', start: 'top 75%', end: 'bottom 45%', scrub: 0.6 } })
       .fromTo(words, { opacity: 0.12 }, { opacity: 1, stagger: 0.1, ease: 'none' }, 0)
       .fromTo(pills, { width: 0 }, { width: '1.9em', stagger: { each: 0.1 * (words.length / pills.length) }, ease: 'power2.out', duration: 0.6 }, 0.2)
-
-    gsap.from('.discipline', {
-      y: 40, autoAlpha: 0, duration: 1, ease: 'expo.out', stagger: 0.08,
-      scrollTrigger: { trigger: '.disciplines', start: 'top 85%' },
-    })
   }, { scope: root })
 
   return (
@@ -60,29 +46,6 @@ export default function Statement() {
           ]
         })}
       </p>
-
-      <ul className="disciplines">
-        {DISCIPLINES.map((d, i) => {
-          const list = projects.filter(p => p.disciplines.includes(d.match))
-          const sample = section(list[0].slug, list[0].sections[0].key)[0]
-          return (
-            <li className="discipline" key={d.title}>
-              <TLink
-                to="/#work"
-                label="Index"
-                data-cursor="See all"
-                onClick={() => window.dispatchEvent(new CustomEvent('index:filter', { detail: d.match }))}
-              >
-                <span className="mono">0{i + 1}</span>
-                <h3>{d.title}</h3>
-                <p>{d.note}</p>
-                <span className="mono discipline__count">{list.length} projects</span>
-                {sample && <img className="discipline__peek" src={url(sample.poster ?? sample.sm)} alt="" loading="lazy" />}
-              </TLink>
-            </li>
-          )
-        })}
-      </ul>
     </section>
   )
 }

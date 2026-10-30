@@ -9,7 +9,6 @@ import './styles/home.css'
 import './styles/project.css'
 
 startSmooth()
-if (import.meta.env.DEV) import('gsap').then(m => (window.gsap = m.gsap))
 
 // GitHub Pages serves 404.html for deep links; it is a copy of index.html,
 // so the router picks the path straight up from the address bar.

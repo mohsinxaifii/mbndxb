@@ -34,7 +34,7 @@
   font-weight: 500;
   max-width: 34ch;
 }
-.phead__meta { display: grid; grid-template-columns: 1fr 1fr; gap: 26px 20px; align-content: start; }
+.phead__meta { display: grid; grid-template-columns: 1fr; gap: 26px 20px; align-content: start; }
 .phead__meta dt { color: var(--mute); margin-bottom: 6px; }
 .phead__meta dd { font-size: 15px; line-height: 1.35; }
 .phead__chapter { text-decoration: underline; text-decoration-color: var(--line); text-underline-offset: 3px; }
@@ -68,26 +68,13 @@
   .phero { height: auto; aspect-ratio: 4 / 5; margin: 0; }
 }
 
-/* ---------- Chapters ---------- */
+/* ---------- Gallery ---------- */
 
-.chapter {
+.gallery {
   display: grid;
-  grid-template-columns: 3fr 9fr;
-  gap: 3vw;
-  padding: 16vh var(--gutter) 0;
+  gap: clamp(10px, 1.2vw, 22px);
+  padding: 14vh var(--gutter) 0;
 }
-.chapter__sticky { position: sticky; top: calc(var(--nav-h) + 4vh); display: grid; gap: 10px; }
-.chapter__sticky .mono { color: var(--mute); }
-.chapter__sticky h2 {
-  font-size: clamp(30px, 3.2vw, 60px);
-  font-weight: 600;
-  letter-spacing: -0.045em;
-  line-height: 0.95;
-}
-.chapter__sticky p { color: var(--mute); max-width: 24ch; font-size: 15px; line-height: 1.4; }
-.chapter__count { margin-top: 8px; }
-
-.chapter__body { display: grid; gap: clamp(10px, 1.2vw, 22px); }
 
 .grow {
   display: grid;
@@ -99,8 +86,7 @@
 .grow--wide, .grow--land { align-items: start; }
 
 @media (max-width: 800px) {
-  .chapter { grid-template-columns: 1fr; padding-top: 12vh; gap: 4vh; }
-  .chapter__sticky { position: static; }
+  .gallery { padding-top: 8vh; }
   .grow__cell { grid-column: span 12; }
   .grow--square .grow__cell, .grow--tall .grow__cell { grid-column: span 6; }
 }
@@ -149,7 +135,7 @@
   transition: font-stretch 0.9s var(--ease);
 }
 .pnext__title .letters { white-space: normal; }
-.pnext:hover .pnext__title .ch { font-stretch: 118%; transition: font-stretch 0.9s var(--ease); }
+.pnext:hover .pnext__title .ch { font-stretch: 78%; transition: font-stretch 0.9s var(--ease); }
 .pnext__peek {
   position: absolute;
   right: var(--gutter);

@@ -8,14 +8,14 @@ import Selected from '../sections/Selected.jsx'
 import Feed from '../sections/Feed.jsx'
 import Motion from '../sections/Motion.jsx'
 import Index from '../sections/Index.jsx'
-import Brands from '../sections/Brands.jsx'
+import Capabilities from '../sections/Capabilities.jsx'
 import Footer from '../components/Footer.jsx'
 
 export default function Home() {
   const { hash } = useLocation()
 
   useEffect(() => {
-    document.title = 'Mubeen Saifi — Creative Director, Dubai'
+    document.title = 'Mobeen Saifi — Creative Director, Dubai'
     if (hash) return onReveal(() => setTimeout(() => scrollTo(hash, { immediate: true }), 50))
   }, [])
 
@@ -27,7 +27,7 @@ export default function Home() {
       <Feed />
       <Motion />
       <Index />
-      <Brands />
+      <Capabilities />
       <Footer />
     </main>
   )

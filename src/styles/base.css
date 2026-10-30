@@ -12,9 +12,9 @@
   --mute: #6f6a62;
   --line: rgba(18, 17, 16, 0.14);
 
-  --sans: 'Archivo', 'Helvetica Neue', Arial, sans-serif;
-  --serif: 'Instrument Serif', 'Times New Roman', serif;
-  --mono: 'Geist Mono', ui-monospace, 'SFMono-Regular', Menlo, monospace;
+  /* One family does all the talking; its width and weight axes carry the motion. */
+  --sans: 'Bricolage Grotesque', 'Helvetica Neue', Arial, sans-serif;
+  --mono: 'Fragment Mono', ui-monospace, 'SFMono-Regular', Menlo, monospace;
 
   --gutter: clamp(16px, 2.2vw, 40px);
   --nav-h: 64px;
@@ -53,6 +53,7 @@ body {
   font-size: 16px;
   line-height: 1.5;
   font-stretch: 100%;
+  font-optical-sizing: auto;
   overflow-x: clip;
 }
 html.toned body { transition: background-color 0.9s var(--ease-io), color 0.9s var(--ease-io); }
@@ -78,11 +79,10 @@ ul, ol { list-style: none; }
   font-weight: 400;
 }
 
-.serif, em.serif {
-  font-family: var(--serif);
-  font-style: italic;
-  font-weight: 400;
-  letter-spacing: -0.01em;
+/* The accent voice: the same family, at its lightest and widest. */
+.thin, em.thin {
+  font-style: normal;
+  font-weight: 200;
   font-stretch: 100%;
 }
 

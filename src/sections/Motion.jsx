@@ -10,15 +10,13 @@ import VideoTile from '../components/VideoTile.jsx'
 
 // The page goes dark. A film opens from a small window to the full screen
 // while the title parts around it, then a strip of reels drifts past.
-const FILM = 'motion/films-01'
+const FILM = 'motion-graphics/01'
 
 export default function Motion() {
   const root = useRef()
   const open = useLightbox()
   const film = media(FILM)
-  const project = bySlug.motion
-  const all = pieces(project)
-  const reels = all.filter(m => m.h > m.w).slice(0, 9)
+  const reels = [...pieces('performance-marketing'), ...pieces('motion-graphics')].filter(m => m.h > m.w).slice(0, 9)
 
   useGSAP(() => {
     if (reduced) return toneTrigger(root.current)
@@ -41,17 +39,17 @@ export default function Motion() {
   }, { scope: root })
 
   return (
-    <section className="motion" ref={root}>
+    <section className="motion" id="motion" ref={root}>
       <div className="motion__stage">
         <p className="eyebrow mono motion__eyebrow">(04) Motion</p>
         <h2 className="motion__title" aria-label="In motion">
           <span className="motion__word motion__word--l">In</span>
-          <span className="motion__word motion__word--r serif">motion</span>
+          <span className="motion__word motion__word--r thin">motion</span>
         </h2>
         <div className="motion__frame">
           <video src={url(film.src)} poster={url(film.poster)} muted loop autoPlay playsInline />
         </div>
-        <button className="motion__play mono" onClick={() => open([film], 0, 'Film 01')} data-cursor="Play">
+        <button className="motion__play mono" onClick={() => open([film], 0, bySlug['motion-graphics'].title)} data-cursor="Play">
           <span className="motion__playdot" aria-hidden="true" /> Play with sound · {duration(film)}
         </button>
       </div>
@@ -59,13 +57,17 @@ export default function Motion() {
       <div className="reels">
         <div className="reels__head">
           <p className="mono">Cut for feeds, stories and screens</p>
-          <TLink to="/work/motion" label={project.title} className="reels__all" data-cursor="Open">
-            All {all.length} films <span aria-hidden="true">→</span>
-          </TLink>
+<div className="reels__links">
+            {['performance-marketing', 'motion-graphics'].map(slug => (
+              <TLink key={slug} to={`/work/${slug}`} label={bySlug[slug].title} className="reels__all" data-cursor="Open">
+                {bySlug[slug].title} <span aria-hidden="true">→</span>
+              </TLink>
+            ))}
+          </div>
         </div>
         <div className="reels__track">
           {reels.map((m, i) => (
-            <VideoTile key={m.key} m={m} label={`Reel ${String(i + 1).padStart(2, '0')}`} onOpen={() => open(reels, i, 'Reels')} />
+            <VideoTile key={m.key} m={m} label={bySlug[m.key.split('/')[0]].title} onOpen={() => open(reels, i, 'In motion')} />
           ))}
         </div>
       </div>

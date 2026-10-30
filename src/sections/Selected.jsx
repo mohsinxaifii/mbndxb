@@ -1,18 +1,23 @@
 import { useRef } from 'react'
 import gsap from 'gsap'
 import { useGSAP } from '@gsap/react'
-import { bySlug, featured } from '../data/projects.js'
-import { count, media, url } from '../lib/media.js'
+import { bySlug } from '../data/projects.js'
+import { media, url } from '../lib/media.js'
 import { reduced } from '../lib/smooth.js'
 import { TLink } from '../lib/transition.jsx'
 
-// Six projects on a horizontal track. On wide screens the section pins and
+// Standout pieces on a horizontal track, each labelled only by its type. On wide screens the section pins and
 // vertical scroll drives the track sideways, with each image drifting inside
 // its frame. On narrow screens it is a plain vertical list.
+const PICKS = [
+  'packaging/01', 'branding/11', 'social-media/08', 'packaging/05',
+  'web-banners/06', 'packaging/04', 'branding/09', 'social-media/12',
+]
+
 export default function Selected() {
   const root = useRef()
   const track = useRef()
-  const list = featured.map(s => bySlug[s])
+  const list = PICKS.map(media).filter(Boolean).map(m => ({ m, p: bySlug[m.key.split('/')[0]] }))
 
   useGSAP(() => {
     if (reduced) return
@@ -55,29 +60,25 @@ export default function Selected() {
       <div className="selected__head">
         <p className="eyebrow mono">(02) Selected work</p>
         <h2 className="selected__title">
-          A few that <em className="serif">mattered</em>
+          A few <em className="thin">favourites</em>
         </h2>
-        <p className="selected__note mono">Scroll to move through · {String(list.length).padStart(2, '0')}</p>
+        <p className="selected__note mono">Keep scrolling to move through</p>
       </div>
       <div className="selected__track" ref={track}>
-        {list.map((p, i) => {
-          const m = media(p.cover)
-          return (
-            <TLink key={p.slug} to={`/work/${p.slug}`} label={p.title} className="card" data-cursor="View" style={{ '--ar': `${m.w} / ${m.h}`, '--tone': p.tone }}>
-              <div className="card__frame" style={{ background: m.color }}>
-                <img className="card__img" src={url(m.src)} alt={p.title} width={m.w} height={m.h} loading="lazy" decoding="async" />
-              </div>
-              <div className="card__meta">
-                <span className="mono">{String(i + 1).padStart(2, '0')}</span>
-                <h3>{p.title}</h3>
-                <span className="mono">{p.disciplines.join(' · ')}</span>
-                <span className="mono card__count">{count(p)} pcs</span>
-              </div>
-            </TLink>
-          )
-        })}
+        {list.map(({ m, p }, i) => (
+          <TLink key={m.key} to={`/work/${p.slug}`} label={p.title} className="card" data-cursor="View" style={{ '--ar': `${m.w} / ${m.h}` }}>
+            <div className="card__frame" style={{ background: m.color }}>
+              <img className="card__img" src={url(m.src)} alt={p.title} width={m.w} height={m.h} loading="lazy" decoding="async" />
+            </div>
+            <div className="card__meta">
+              <span className="mono">{String(i + 1).padStart(2, '0')}</span>
+              <h3>{p.title}</h3>
+              <span className="mono card__more">More {p.title.toLowerCase()} →</span>
+            </div>
+          </TLink>
+        ))}
         <TLink to="/#work" label="Index" className="card card--end" data-cursor="Index">
-          <span className="mono">All projects</span>
+          <span className="mono">Every type of work</span>
           <span className="card__endword">Index <span aria-hidden="true">→</span></span>
         </TLink>
       </div>
