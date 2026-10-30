@@ -10,10 +10,14 @@
   align-items: center;
   padding: 0 var(--gutter);
   color: var(--fg);
-  background: color-mix(in srgb, var(--bg) 80%, transparent);
+  /* Transparent over the hero; solid once the page scrolls. */
+  background: transparent;
+  transition: transform 0.7s var(--ease), color 0.9s var(--ease-io), background-color 0.5s var(--ease);
+}
+.nav.is-solid {
+  background: color-mix(in srgb, var(--bg) 88%, transparent);
   -webkit-backdrop-filter: blur(12px);
   backdrop-filter: blur(12px);
-  transition: transform 0.7s var(--ease), color 0.9s var(--ease-io), background-color 0.9s var(--ease-io);
 }
 .nav.is-away { transform: translateY(-110%); }
 
@@ -67,6 +71,7 @@ a:hover .logo__dot { transform: translateY(-0.5em) scale(1.3); }
   .nav { grid-template-columns: auto 1fr; }
   .nav__links { justify-self: end; gap: 16px; }
   .nav__link .mono { display: none; }
+  .nav__link { padding: 13px 0; margin: -13px 0; }
 }
 
 /* ---------- Cursor ---------- */

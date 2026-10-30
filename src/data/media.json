@@ -1523,13 +1523,13 @@
   "h": 681,
   "color": "#f8f8f8"
  },
- "site/portrait": {
+ "site/hero": {
   "kind": "image",
-  "src": "media/site/portrait.webp",
-  "sm": "media/site/portrait-sm.webp",
-  "w": 500,
-  "h": 500,
-  "color": "#080808"
+  "src": "media/site/hero.webp",
+  "sm": "media/site/hero-sm.webp",
+  "w": 1536,
+  "h": 1024,
+  "color": "#f8f8f8"
  },
  "social-media/01": {
   "kind": "gif",

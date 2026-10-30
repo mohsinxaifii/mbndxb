@@ -83,7 +83,7 @@ export default function Resume() {
             <li className="cv__role" key={r.from + r.role}>
               <div className="cv__when mono">
                 <span>{r.from} — {r.to}</span>
-                {r.to === 'Present' && <span className="cv__now">Current</span>}
+                {r.current && <span className="cv__now">Current</span>}
               </div>
               <div className="cv__what">
                 <h3 className="cv__name">{r.role}</h3>

@@ -7,17 +7,21 @@
   --ink-2: #1d1c1a;
   --accent: #d2461f;
   --gold: #b48a4a;
+  --gold-text: #8f6a30; /* gold for text on light backgrounds (4.5:1) */
 
   --bg: var(--paper);
   --fg: var(--ink);
-  --mute: #6f6a62;
+  --mute: #5d5850;
   --line: rgba(18, 17, 16, 0.14);
 
   /* One family does all the talking; its width and weight axes carry the motion. */
   --sans: 'Bricolage Grotesque', 'Helvetica Neue', Arial, sans-serif;
   --mono: 'Fragment Mono', ui-monospace, 'SFMono-Regular', Menlo, monospace;
 
-  --gutter: clamp(16px, 2.2vw, 40px);
+  /* Side spacing. Past 1440px of content it grows, keeping everything centred
+     at a max width while backgrounds stay full-bleed. */
+  --max: 1440px;
+  --gutter: max(clamp(16px, 2.2vw, 40px), calc((100vw - var(--max)) / 2));
   --nav-h: 64px;
   --ease: cubic-bezier(0.16, 1, 0.3, 1);
   --ease-io: cubic-bezier(0.76, 0, 0.24, 1);

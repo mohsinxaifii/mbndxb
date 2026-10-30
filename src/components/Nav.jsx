@@ -23,8 +23,10 @@ export default function Nav() {
       const away = y > 160 && y > last
       el.current.classList.toggle('is-away', away)
       document.documentElement.classList.toggle('nav-away', away)
+      el.current.classList.toggle('is-solid', y > 8)
       last = y
     }
+    onScroll()
     const src = lenis ?? window
     src.on ? src.on('scroll', onScroll) : window.addEventListener('scroll', onScroll, { passive: true })
     return () => (src.off ? src.off('scroll', onScroll) : window.removeEventListener('scroll', onScroll))

@@ -123,7 +123,9 @@ function Chapter({ p, n }) {
   const open = useLightbox()
   const view = VIEW[p.slug] ?? { kind: 'grid', take: 8 }
   const all = pieces(p.slug)
-  const items = view.kind === 'film' ? [all.find(m => m.key === p.cover) ?? all[0]] : sample(all, view.take)
+  // Reels show only vertical pieces, so the strip keeps one shape and even spacing.
+  const pool = view.kind === 'reels' && all.filter(m => m.h > m.w).length >= 4 ? all.filter(m => m.h > m.w) : all
+  const items = view.kind === 'film' ? [all.find(m => m.key === p.cover) ?? all[0]] : sample(pool, view.take)
   const show = i => open(items, i, p.title)
 
   useGSAP(() => {
@@ -184,22 +186,82 @@ function Chapter({ p, n }) {
   )
 }
 
-function Body({ kind, items, title, show }) {
-  if (kind === 'strip' || kind === 'reels') {
-    return (
-      <div className="chap__window">
-        <div className="chap__track">
-          {items.map((m, i) => (
-            <div className="chap__cell" key={m.key} style={{ '--r': m.w / m.h }}>
-              {m.kind === 'video'
-                ? <VideoTile m={m} label={title} onOpen={() => show(i)} />
-                : <Plate m={m} alt={title} sizes="40vw" onOpen={() => show(i)} />}
-            </div>
-          ))}
-        </div>
+// Phones: a strip is a swipeable carousel that also advances on its own.
+// One piece every few seconds, looping to the start, only while on screen;
+// any touch pauses it, and it resumes a few seconds after the last one.
+function useAutoplay(ref) {
+  useEffect(() => {
+    const el = ref.current
+    if (!el || reduced || !matchMedia('(max-width: 800px)').matches) return
+    let visible = false
+    let idleUntil = 0
+    const io = new IntersectionObserver(([e]) => (visible = e.isIntersecting), { threshold: 0.5 })
+    io.observe(el)
+    const hold = () => (idleUntil = Date.now() + 5000)
+    const opts = { passive: true }
+    el.addEventListener('touchstart', hold, opts)
+    el.addEventListener('pointerdown', hold, opts)
+    el.addEventListener('wheel', hold, opts)
+    const step = () => {
+      if (!visible || Date.now() < idleUntil || document.hidden) return
+      const cells = [...el.querySelectorAll('.chap__cell')]
+      const mid = el.scrollLeft + el.clientWidth / 2
+      const next = cells.find(c => c.offsetLeft + c.offsetWidth / 2 > mid + 4)
+      const atEnd = !next || el.scrollLeft + el.clientWidth >= el.scrollWidth - 4
+      const left = atEnd ? 0 : next.offsetLeft + next.offsetWidth / 2 - el.clientWidth / 2
+      el.scrollTo({ left, behavior: 'smooth' })
+    }
+    const timer = setInterval(step, 2800)
+    return () => {
+      clearInterval(timer)
+      io.disconnect()
+      el.removeEventListener('touchstart', hold)
+      el.removeEventListener('pointerdown', hold)
+      el.removeEventListener('wheel', hold)
+    }
+  }, [ref])
+}
+
+function Strip({ items, title, show }) {
+  const win = useRef()
+  const [at, setAt] = useState(0)
+  useAutoplay(win)
+  // Which piece is centred, for the position dots on phones.
+  useEffect(() => {
+    const el = win.current
+    const onScroll = () => {
+      const mid = el.scrollLeft + el.clientWidth / 2
+      const cells = [...el.querySelectorAll('.chap__cell')]
+      let best = 0
+      cells.forEach((c, i) => { if (Math.abs(c.offsetLeft + c.offsetWidth / 2 - mid) < Math.abs(cells[best].offsetLeft + cells[best].offsetWidth / 2 - mid)) best = i })
+      setAt(best)
+    }
+    el.addEventListener('scroll', onScroll, { passive: true })
+    return () => el.removeEventListener('scroll', onScroll)
+  }, [])
+  return (
+    <>
+    <div className="chap__window" ref={win}>
+      <div className="chap__track">
+        {items.map((m, i) => (
+          <div className="chap__cell" key={m.key} style={{ '--r': m.w / m.h }}>
+            {m.kind === 'video'
+              ? <VideoTile m={m} label={title} onOpen={() => show(i)} />
+              : <Plate m={m} alt={title} sizes="40vw" onOpen={() => show(i)} />}
+          </div>
+        ))}
       </div>
-    )
-  }
+    </div>
+    <div className="chap__dots" aria-hidden="true">
+      {items.map((m, i) => <i key={m.key} className={i === at ? 'is-on' : ''} />)}
+    </div>
+    </>
+  )
+}
+
+function Body({ kind, items, title, show }) {
+  if (kind === 'strip' || kind === 'reels') return <Strip items={items} title={title} show={show} />
+
   if (kind === 'wall' || kind === 'mailers') {
     const n = kind === 'wall' ? 4 : 6
     const cols = Array.from({ length: n }, (_, c) => items.map((m, i) => [m, i]).filter((_, i) => i % n === c))

@@ -4,16 +4,16 @@ export const site = {
   role: 'Creative Director',
   city: 'Dubai',
   headline: 'I lead how brands look, sell & move.',
-  intro: 'Creative director leading brand, packaging, campaign and motion work for consumer brands. I own projects from strategy to launch, and deliver.',
-  facts: ['12 years', 'Dubai, UAE', 'UAE driving license', 'On-site or remote'],
+  intro: 'Creative director for consumer brands. I lead brand, packaging, campaign and motion work from first strategy to final launch.',
+  facts: ['11 years', 'UAE driving license', 'On-site or remote'],
   cv: {
     file: 'cv/Mobeen-Saifi-CV.pdf',
     size: '360 KB',
     title: 'Senior Graphic Designer',
-    summary: '10+ years in branding, packaging and digital advertising for skincare, Ayurveda and personal-care brands. Leads teams and production from concept to print.',
-    // From the CV, most recent first.
+    summary: '11 years in branding, packaging and digital advertising for skincare, Ayurveda and personal-care brands. Leads teams and production from concept to print.',
+    // From the CV, most recent first. `current` shows the Current badge.
     roles: [
-      { from: 'Apr 2024', to: 'Present', role: 'Graphic Designer', company: 'Niche Marketing Management', place: 'Dubai, UAE', line: 'Leads all design, digital and Arabic & English work for a 360° marketing agency.' },
+      { from: 'Apr 2024', to: 'Present', current: true, role: 'Graphic Designer', company: 'Niche Marketing Management', place: 'Dubai, UAE', line: 'Leads all design, digital and Arabic & English work for a 360° marketing agency.' },
       { from: 'Apr 2023', to: 'Present', role: 'Freelance Design Consultant', company: 'TAC (The Ayurveda Co.) & KE Healthcare', place: 'Remote', line: 'Ad, branding and marketing visuals for digital and print.' },
       { from: 'Mar 2022', to: 'Apr 2023', role: 'Creative Manager', company: 'Sanfe / Redroom Technology', place: 'India', line: 'Directed visual communication, new packaging and brand guidelines; mentored the design team.' },
       { from: 'Nov 2019', to: 'Mar 2022', role: 'Lead Creative Designer', company: 'TAC (The Ayurveda Co.) & KE Healthcare', place: 'India', line: 'Led the branding, marketing and ad design team, on time and at a higher standard.' },

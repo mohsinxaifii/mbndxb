@@ -1,11 +1,65 @@
-/* ---------- Hero ---------- */
+/* ---------- Hero: the studio scene as a full background ---------- */
 
 .hero {
+  /* The illustration's own background colour, so the scene has no edges to hide. */
+  --scene: #f8f7f7;
+  position: relative;
   min-height: 100svh;
   display: grid;
   grid-template-rows: auto 1fr;
-  padding: calc(var(--nav-h) + 3vh) var(--gutter) 4vh;
+  padding: calc(var(--nav-h) + 3vh) var(--gutter) 7vh;
+  overflow: hidden;
+  isolation: isolate;
+  background: var(--scene);
 }
+.hero__bg { position: absolute; inset: 0; z-index: -1; overflow: hidden; }
+.hero__depth { position: absolute; inset: 0; will-change: transform; }
+/* Sized in JS: covers the section, pinned to the top (see Hero.jsx). */
+.hero__canvas { position: absolute; top: 0; transform-origin: 70% 0; will-change: transform, filter; }
+.hero__scene { display: block; width: 100%; height: 100%; }
+/* A paper wash behind the text, and a fade into the next section. */
+.hero__veil {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(180deg, transparent 72%, var(--paper) 100%),
+    linear-gradient(90deg, var(--scene) 0%, color-mix(in srgb, var(--scene) 88%, transparent) 24%, color-mix(in srgb, var(--scene) 30%, transparent) 42%, transparent 56%);
+}
+.hero__glow {
+  position: absolute;
+  left: 34%;
+  top: -14%;
+  width: 66%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255, 186, 102, 0.38), rgba(255, 170, 90, 0.1) 45%, transparent 70%);
+  mix-blend-mode: multiply;
+  opacity: 0.8;
+  pointer-events: none;
+  z-index: 1;
+}
+.hero__dust { position: absolute; inset: 0; pointer-events: none; z-index: 2; }
+.hero__dust i { position: absolute; border-radius: 50%; background: #e6b56a; box-shadow: 0 0 6px rgba(230, 181, 106, 0.8); opacity: 0; }
+/* Steam over the mug (about 92% across, 70% down the picture). */
+.hero__steam { position: absolute; left: 89.5%; top: 55%; width: 5%; overflow: visible; pointer-events: none; z-index: 2; }
+.hero__steam path { fill: none; stroke: rgba(120, 110, 100, 0.55); stroke-width: 1.6; stroke-linecap: round; opacity: 0; }
+/* Thoughts rise from just above his head (about 61% across, 20% down). */
+.hero__thoughts { position: absolute; left: 61%; top: 20%; width: 0; height: 0; pointer-events: none; z-index: 3; }
+.hero__thought {
+  position: absolute;
+  left: 0;
+  top: 0;
+  translate: -50% -100%;
+  padding: 8px 13px 7px;
+  border-radius: 999px;
+  white-space: nowrap;
+  background: rgba(255, 255, 255, 0.92);
+  box-shadow: inset 0 0 0 1px var(--line), 0 10px 24px -16px rgba(18, 17, 16, 0.45);
+  color: var(--ink);
+  font-size: 10px;
+}
+.hero__thought::before { content: ''; display: inline-block; width: 6px; height: 6px; margin-right: 8px; border-radius: 50%; background: var(--gold); vertical-align: 1px; }
+
 .hero__bar {
   display: flex;
   justify-content: space-between;
@@ -16,24 +70,12 @@
 }
 .hero__place { display: inline-flex; align-items: center; gap: 10px; font-size: 14px; font-weight: 500; }
 .hero__place .flag { width: 24px; height: 12px; }
-.hero__place .ar { color: var(--gold); font-size: 15px; }
+.hero__place .ar { color: var(--gold-text); font-size: 15px; }
 .hero__coords { color: var(--mute); }
 
-.hero__main {
-  display: grid;
-  grid-template-columns: minmax(0, 7fr) minmax(0, 5fr);
-  align-items: center;
-  gap: 4vw;
-}
-.hero__text { display: grid; gap: 4vh; align-content: center; }
-.hero__head {
-  font-size: clamp(44px, 6.2vw, 120px);
-  font-weight: 500;
-  line-height: 1;
-  letter-spacing: -0.045em;
-  max-width: 11ch;
-}
-.hero__intro { font-size: clamp(17px, 1.3vw, 21px); line-height: 1.5; max-width: 40ch; }
+.hero__copy { align-self: center; display: grid; gap: 3.4vh; max-width: min(36vw, 600px); padding: 4vh 0; }
+.hero__head { font-size: clamp(42px, 5vw, 100px); font-weight: 500; line-height: 1; letter-spacing: -0.045em; }
+.hero__intro { font-size: clamp(16px, 1.2vw, 20px); line-height: 1.5; max-width: 40ch; }
 .hero__facts { display: flex; flex-wrap: wrap; gap: 8px 0; color: var(--mute); }
 .hero__facts li + li::before { content: '·'; margin: 0 12px; color: var(--gold); }
 .hero__cta { display: flex; flex-wrap: wrap; gap: 10px; }
@@ -44,49 +86,45 @@
   padding: 12px 22px;
   border-radius: 999px;
   border: 1px solid var(--fg);
+  background: transparent;
   transition: background-color 0.4s var(--ease), color 0.4s var(--ease);
 }
 .pill--solid, .pill:hover { background: var(--fg); color: var(--bg); }
 
-.hero__portrait {
-  position: relative;
-  display: block;
-  width: min(100%, 72vh);
-  color: var(--ink);
-  justify-self: end;
-}
-.halftone canvas { position: absolute; inset: 0; width: 100%; height: 100%; touch-action: pan-y; }
-.halftone__hint {
-  position: absolute;
-  left: 50%;
-  bottom: -6px;
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  padding: 9px 14px 8px;
-  border-radius: 999px;
-  background: var(--bg);
-  box-shadow: inset 0 0 0 1px var(--line);
-  color: var(--fg);
-  white-space: nowrap;
-  pointer-events: none;
-  opacity: 0;
-  transform: translate(-50%, 8px);
-  transition: opacity 0.6s var(--ease), transform 0.6s var(--ease);
-}
-.halftone__hint.is-on { opacity: 1; transform: translate(-50%, 0); }
-.halftone__hint i { width: 7px; height: 7px; border-radius: 50%; background: var(--accent); animation: blink 1.4s steps(1) infinite; }
-
 @media (max-width: 900px) {
-  .hero { min-height: auto; padding-bottom: 0; }
-  .hero__main { display: flex; flex-direction: column-reverse; gap: 28px; padding-top: 28px; }
-  .hero__portrait { align-self: center; width: min(100%, 440px); }
-  .hero__text { gap: 22px; }
-  .hero__head { font-size: clamp(40px, 11.5vw, 64px); max-width: 12ch; }
-  .hero__intro { font-size: 16px; }
-  .hero__facts { font-size: 10px; }
+  /* Phones: the whole scene, full width, straight under the nav; then a
+     caption-style location line, the statement and the actions. One colour
+     throughout, no fades, a 24px rhythm. */
+  .hero { min-height: auto; grid-template-rows: auto auto auto; padding: var(--nav-h) var(--gutter) 40px; }
+  /* The negative bottom margin pulls the content up onto the faded part of the picture. */
+  .hero__bg { position: relative; inset: auto; z-index: 0; grid-row: 1; aspect-ratio: 4 / 5; margin: 0 calc(var(--gutter) * -1) -26vw; }
+  .hero__thoughts { display: none; }
+  /* An eased fade (many soft stops) from the photo into the page colour, so the dark shirt
+     melts away instead of turning grey. The location line and headline sit on it. */
+  .hero__veil {
+    background: linear-gradient(180deg,
+      transparent 56%,
+      color-mix(in srgb, var(--scene) 10%, transparent) 63%,
+      color-mix(in srgb, var(--scene) 32%, transparent) 70%,
+      color-mix(in srgb, var(--scene) 60%, transparent) 77%,
+      color-mix(in srgb, var(--scene) 84%, transparent) 84%,
+      color-mix(in srgb, var(--scene) 96%, transparent) 90%,
+      var(--scene) 95%);
+  }
+  .hero__bar, .hero__copy { position: relative; z-index: 1; }
+  .hero__bar { grid-row: 2; padding: 0; border: 0; }
+  .hero__place { font-size: 13px; gap: 8px; }
+  .hero__place .flag { width: 20px; height: 10px; }
+  .hero__place .ar { font-size: 14px; }
   .hero__coords { display: none; }
-  .hero__cta .pill { flex: 1; text-align: center; }
+  .hero__copy { grid-row: 3; align-self: start; max-width: none; padding: 16px 0 0; gap: 20px; }
+  .hero__head { font-size: clamp(36px, 10.2vw, 56px); max-width: 12ch; }
+  .hero__intro { font-size: 15px; line-height: 1.55; }
+  .hero__facts { gap: 6px; font-size: 11px; color: var(--fg); }
+  .hero__facts li { padding: 6px 10px 5px; border-radius: 999px; box-shadow: inset 0 0 0 1px var(--line); }
+  .hero__facts li + li::before { content: none; }
+  .hero__cta { gap: 10px; }
+  .hero__cta .pill { flex: 1; text-align: center; padding: 14px 16px; }
 }
 
 /* ---------- Category bar (sticky while the work is on screen) ---------- */
@@ -138,6 +176,12 @@ html.nav-away .catbar.is-on { transform: translateY(14px); }
 .catbar__pill:hover { background: color-mix(in srgb, var(--fg) 8%, transparent); }
 .catbar__pill.is-active { background: var(--fg); color: var(--bg); }
 .chap__anchor { position: absolute; top: 0; }
+.chap__dots { display: none; }
+@media (max-width: 800px) {
+  .chap__dots { display: flex; justify-content: center; gap: 6px; padding-top: 16px; }
+  .chap__dots i { width: 6px; height: 6px; border-radius: 999px; background: var(--line); transition: width 0.4s var(--ease), background-color 0.4s; }
+  .chap__dots i.is-on { width: 18px; background: var(--fg); }
+}
 
 /* Phone switcher: current type of work with previous/next, and a list that opens upward. */
 .catbar__mini { display: none; }
@@ -302,13 +346,13 @@ html.nav-away .catbar.is-on { transform: translateY(14px); }
   }
   .chap__n { grid-area: n; }
   .chap__title { grid-area: title; font-size: clamp(30px, 9vw, 44px); }
-  .chap__tags { grid-area: tags; font-size: 10px; }
-  .chap__all { grid-area: all; align-self: center; padding: 0; border: 0; font-size: 14px; text-decoration: underline; text-underline-offset: 4px; text-decoration-color: var(--line); }
+  .chap__tags { grid-area: tags; font-size: 11px; }
+  .chap__all { grid-area: all; padding: 12px 0; margin: -12px 0; align-self: center; border: 0; font-size: 14px; text-decoration: underline; text-underline-offset: 4px; text-decoration-color: var(--line); }
   .chap__all:hover { background: none; color: var(--gold); }
   .chap__window { position: relative; }
   .chap__window { padding: 0; }
   .chap__window::after {
-    content: 'Swipe →';
+    content: none;
     position: absolute;
     right: var(--gutter);
     top: -22px;
@@ -318,12 +362,24 @@ html.nav-away .catbar.is-on { transform: translateY(14px); }
     text-transform: uppercase;
     color: var(--mute);
   }
-  .chap__track { align-items: flex-start; gap: 10px; padding-right: 30vw; }
+  /* Each piece sits alone, centred on its own screen-wide page: nothing peeks in from the sides. */
+  .chap__track { align-items: center; gap: 0; padding: 0; }
   .chap__window { overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: none; }
   .chap__window::-webkit-scrollbar { display: none; }
   /* Sized by width, so each slot is exactly as tall as the piece in it. */
-  .chap__cell, .chap--reels .chap__cell { scroll-snap-align: center; height: auto; width: min(82vw, calc(56vh * var(--r))); }
-  .chap__cell > * { width: 100%; height: auto; }
+  /* One row height for every piece, so short pieces never leave a gap below. */
+  .chap__cell {
+    --row: 64vw;
+    --w: min(calc(100vw - 2 * var(--gutter)), calc(var(--row) * var(--r)));
+    scroll-snap-align: center;
+    height: var(--row);
+    width: var(--w);
+    margin-inline: calc((100vw - var(--w)) / 2);
+    display: grid;
+    align-items: center;
+  }
+  .chap--reels .chap__cell { --row: 112vw; }
+  .chap__cell > * { width: 100%; height: auto; max-height: var(--row); }
   .chap__cols, .chap__col { gap: 8px; }
   .chap__cols--6 { grid-template-columns: repeat(2, 1fr); }
   .chap__grid { gap: 8px; }
@@ -360,11 +416,11 @@ html.nav-away .catbar.is-on { transform: translateY(14px); }
 .cv__when { display: grid; align-content: start; gap: 8px; color: var(--mute); padding-top: 6px; }
 .cv__now {
   justify-self: start;
-  padding: 4px 9px 3px;
+  padding: 4px 10px 3px;
   border-radius: 999px;
   background: var(--gold);
-  color: #fff;
-  font-size: 9px;
+  color: var(--ink);
+  font-size: 11px;
 }
 .cv__name { font-size: clamp(20px, 1.8vw, 30px); font-weight: 500; letter-spacing: -0.025em; line-height: 1.15; }
 .cv__company { margin-top: 6px; font-size: 15px; font-weight: 500; }
