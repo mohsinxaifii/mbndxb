@@ -1527,8 +1527,8 @@
   "kind": "image",
   "src": "media/site/portrait.webp",
   "sm": "media/site/portrait-sm.webp",
-  "w": 322,
-  "h": 313,
+  "w": 500,
+  "h": 500,
   "color": "#080808"
  },
  "social-media/01": {

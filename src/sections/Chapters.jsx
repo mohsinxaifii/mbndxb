@@ -37,6 +37,8 @@ export default function Chapters() {
 function CategoryBar() {
   const bar = useRef()
   const [active, setActive] = useState(projects[0].slug)
+  const [open, setOpen] = useState(false)
+  const at = projects.findIndex(p => p.slug === active)
 
   useGSAP(() => {
     const el = bar.current
@@ -44,7 +46,10 @@ function CategoryBar() {
       trigger: '.chapters',
       start: 'top 45%',
       end: 'bottom 55%',
-      onToggle: self => el.classList.toggle('is-on', self.isActive),
+      onToggle: self => {
+        el.classList.toggle('is-on', self.isActive)
+        if (!self.isActive) setOpen(false)
+      },
     })
     projects.forEach(p => {
       ScrollTrigger.create({
@@ -59,18 +64,22 @@ function CategoryBar() {
   // Keep the active pill in view when the bar scrolls sideways on small screens.
   useEffect(() => {
     const pill = bar.current?.querySelector('.catbar__pill.is-active')
-    const track = bar.current?.querySelector('.catbar__track')
+    const track = bar.current?.querySelector('.catbar__scroll')
     if (pill && track) track.scrollTo({ left: pill.offsetLeft - track.clientWidth / 2 + pill.offsetWidth / 2, behavior: 'smooth' })
   }, [active])
 
   const go = slug => {
+    setOpen(false)
     const nav = parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--nav-h')) || 64
     scrollTo(`#c-${slug}`, { offset: -(nav + 40) })
   }
+  const step = d => go(projects[Math.min(projects.length - 1, Math.max(0, at + d))].slug)
+  const num = i => String(i + 1).padStart(2, '0')
 
   return (
     <nav className="catbar" ref={bar} aria-label="Jump to a type of work">
       <div className="catbar__track">
+        <div className="catbar__scroll">
         {projects.map(p => (
           <button
             key={p.slug}
@@ -81,6 +90,29 @@ function CategoryBar() {
             {p.title}
           </button>
         ))}
+        </div>
+      </div>
+
+      {/* Phones: one switcher instead of a row that would have to scroll. */}
+      <div className={`catbar__mini${open ? ' is-open' : ''}`}>
+        <ul className="catbar__menu" role="list">
+          {projects.map((p, i) => (
+            <li key={p.slug}>
+              <button className={active === p.slug ? 'is-active' : ''} onClick={() => go(p.slug)}>
+                <span className="mono">{num(i)}</span> {p.title}
+              </button>
+            </li>
+          ))}
+        </ul>
+        <div className="catbar__switch">
+          <button className="catbar__step" onClick={() => step(-1)} disabled={at <= 0} aria-label="Previous type of work">‹</button>
+          <button className="catbar__current" onClick={() => setOpen(o => !o)} aria-expanded={open}>
+            <span className="mono">{num(at)} / {num(projects.length - 1)}</span>
+            <span>{projects[at]?.title}</span>
+            <span className="catbar__caret" aria-hidden="true">▴</span>
+          </button>
+          <button className="catbar__step" onClick={() => step(1)} disabled={at >= projects.length - 1} aria-label="Next type of work">›</button>
+        </div>
       </div>
     </nav>
   )

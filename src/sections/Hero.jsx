@@ -9,7 +9,7 @@ import { Words } from '../components/Split.jsx'
 import Flag from '../components/Flag.jsx'
 import Halftone from '../components/Halftone.jsx'
 
-// Statement on the left, the portrait as a halftone on the right.
+// Statement on the left; the portrait on the right, drawn as a halftone.
 export default function Hero() {
   const root = useRef()
   const portrait = media('site/portrait')
@@ -44,7 +44,7 @@ export default function Hero() {
             <button className="pill" onClick={() => scrollTo('#contact')} data-cursor="Contact">Get in touch</button>
           </div>
         </div>
-        {portrait && <Halftone m={portrait} cols={96} className="hero__portrait" />}
+        {portrait && <Halftone m={portrait} className="hero__portrait" />}
       </div>
     </section>
   )

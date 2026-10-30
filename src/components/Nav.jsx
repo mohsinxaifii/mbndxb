@@ -7,6 +7,7 @@ import Logo from './Logo.jsx'
 const links = [
   { to: '/#work', label: 'Work' },
   { to: '/#motion', label: 'Motion' },
+  { to: '/#cv', label: 'CV' },
   { to: '/#contact', label: 'Contact' },
 ]
 
