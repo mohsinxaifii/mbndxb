@@ -61,7 +61,7 @@ export const projects = [
     tags: ['Launches', 'Sales', 'App installs'],
     cover: 'emailers/01',
     tone: '#3E2A1E',
-    intro: 'Long-scroll emailers that hold attention from subject line to button. Hover a mailer to read it top to bottom.',
+    intro: 'Long-scroll emailers that hold attention from subject line to button.',
   },
   {
     slug: 'print',

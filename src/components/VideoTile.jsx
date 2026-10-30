@@ -4,7 +4,7 @@ import { useReveal } from './Plate.jsx'
 
 // A silent preview loop that only plays while on screen. Opens the full film.
 export default function VideoTile({ m, label, onOpen, className = '' }) {
-  const wrap = useReveal()
+  const [wrap, shown] = useReveal()
   const video = useRef()
 
   useEffect(() => {
@@ -20,7 +20,7 @@ export default function VideoTile({ m, label, onOpen, className = '' }) {
   return (
     <figure
       ref={wrap}
-      className={`plate plate--video reveal ${className}`}
+      className={`plate plate--video reveal${shown ? ' is-in' : ''} ${className}`}
       style={{ '--ar': `${m.w} / ${m.h}`, '--tint': m.color }}
       onClick={onOpen}
       data-cursor="Play"

@@ -3,12 +3,7 @@ import { useLocation } from 'react-router-dom'
 import { onReveal } from '../lib/reveal.js'
 import { scrollTo } from '../lib/smooth.js'
 import Hero from '../sections/Hero.jsx'
-import Statement from '../sections/Statement.jsx'
-import Selected from '../sections/Selected.jsx'
-import Feed from '../sections/Feed.jsx'
-import Motion from '../sections/Motion.jsx'
-import Index from '../sections/Index.jsx'
-import Capabilities from '../sections/Capabilities.jsx'
+import Chapters from '../sections/Chapters.jsx'
 import Footer from '../components/Footer.jsx'
 
 export default function Home() {
@@ -22,12 +17,7 @@ export default function Home() {
   return (
     <main>
       <Hero />
-      <Statement />
-      <Selected />
-      <Feed />
-      <Motion />
-      <Index />
-      <Capabilities />
+      <Chapters />
       <Footer />
     </main>
   )
