@@ -1,0 +1,2510 @@
+{
+ "cleanex-india/identity-01": {
+  "kind": "image",
+  "src": "media/cleanex-india/identity-01.webp",
+  "sm": "media/cleanex-india/identity-01-sm.webp",
+  "w": 1000,
+  "h": 502,
+  "color": "#080808"
+ },
+ "cleanex-india/identity-02": {
+  "kind": "image",
+  "src": "media/cleanex-india/identity-02.webp",
+  "sm": "media/cleanex-india/identity-02-sm.webp",
+  "w": 1000,
+  "h": 434,
+  "color": "#080808"
+ },
+ "cleanex-india/identity-03": {
+  "kind": "image",
+  "src": "media/cleanex-india/identity-03.webp",
+  "sm": "media/cleanex-india/identity-03-sm.webp",
+  "w": 696,
+  "h": 389,
+  "color": "#f8f8f8"
+ },
+ "cleanex-india/identity-04": {
+  "kind": "image",
+  "src": "media/cleanex-india/identity-04.webp",
+  "sm": "media/cleanex-india/identity-04-sm.webp",
+  "w": 690,
+  "h": 393,
+  "color": "#f8f8f8"
+ },
+ "cleanex-india/mark-01": {
+  "kind": "image",
+  "src": "media/cleanex-india/mark-01.webp",
+  "sm": "media/cleanex-india/mark-01-sm.webp",
+  "w": 5543,
+  "h": 2683,
+  "color": "#f8f8f8"
+ },
+ "cleanex-india/packaging-01": {
+  "kind": "image",
+  "src": "media/cleanex-india/packaging-01.webp",
+  "sm": "media/cleanex-india/packaging-01-sm.webp",
+  "w": 3500,
+  "h": 2300,
+  "color": "#f8f8f8"
+ },
+ "cleanex-india/packaging-02": {
+  "kind": "image",
+  "src": "media/cleanex-india/packaging-02.webp",
+  "sm": "media/cleanex-india/packaging-02-sm.webp",
+  "w": 3500,
+  "h": 2300,
+  "color": "#f8f8f8"
+ },
+ "cleanex-india/packaging-03": {
+  "kind": "image",
+  "src": "media/cleanex-india/packaging-03.webp",
+  "sm": "media/cleanex-india/packaging-03-sm.webp",
+  "w": 3500,
+  "h": 2300,
+  "color": "#f8f8f8"
+ },
+ "cleanex-india/packaging-04": {
+  "kind": "image",
+  "src": "media/cleanex-india/packaging-04.webp",
+  "sm": "media/cleanex-india/packaging-04-sm.webp",
+  "w": 3500,
+  "h": 2300,
+  "color": "#f8f8f8"
+ },
+ "cleanex-india/packaging-05": {
+  "kind": "image",
+  "src": "media/cleanex-india/packaging-05.webp",
+  "sm": "media/cleanex-india/packaging-05-sm.webp",
+  "w": 5906,
+  "h": 5906,
+  "color": "#f8f8f8"
+ },
+ "cleanex-india/packaging-06": {
+  "kind": "image",
+  "src": "media/cleanex-india/packaging-06.webp",
+  "sm": "media/cleanex-india/packaging-06-sm.webp",
+  "w": 5906,
+  "h": 5906,
+  "color": "#f8f8f8"
+ },
+ "cleanex-india/packaging-07": {
+  "kind": "image",
+  "src": "media/cleanex-india/packaging-07.webp",
+  "sm": "media/cleanex-india/packaging-07-sm.webp",
+  "w": 5906,
+  "h": 5906,
+  "color": "#f8f8f8"
+ },
+ "cleanex-india/packaging-08": {
+  "kind": "image",
+  "src": "media/cleanex-india/packaging-08.webp",
+  "sm": "media/cleanex-india/packaging-08-sm.webp",
+  "w": 5906,
+  "h": 5906,
+  "color": "#f8f8f8"
+ },
+ "cleanex-india/packaging-09": {
+  "kind": "image",
+  "src": "media/cleanex-india/packaging-09.webp",
+  "sm": "media/cleanex-india/packaging-09-sm.webp",
+  "w": 5906,
+  "h": 5906,
+  "color": "#f8f8f8"
+ },
+ "cleanex-india/packaging-10": {
+  "kind": "image",
+  "src": "media/cleanex-india/packaging-10.webp",
+  "sm": "media/cleanex-india/packaging-10-sm.webp",
+  "w": 5906,
+  "h": 5906,
+  "color": "#f8f8f8"
+ },
+ "cleanex-india/packaging-11": {
+  "kind": "image",
+  "src": "media/cleanex-india/packaging-11.webp",
+  "sm": "media/cleanex-india/packaging-11-sm.webp",
+  "w": 5906,
+  "h": 5906,
+  "color": "#f8f8f8"
+ },
+ "cleanex-india/packaging-12": {
+  "kind": "image",
+  "src": "media/cleanex-india/packaging-12.webp",
+  "sm": "media/cleanex-india/packaging-12-sm.webp",
+  "w": 5906,
+  "h": 5906,
+  "color": "#f8f8f8"
+ },
+ "cleanex-india/packaging-13": {
+  "kind": "image",
+  "src": "media/cleanex-india/packaging-13.webp",
+  "sm": "media/cleanex-india/packaging-13-sm.webp",
+  "w": 5906,
+  "h": 5906,
+  "color": "#f8f8f8"
+ },
+ "cleanex-india/packaging-14": {
+  "kind": "image",
+  "src": "media/cleanex-india/packaging-14.webp",
+  "sm": "media/cleanex-india/packaging-14-sm.webp",
+  "w": 5906,
+  "h": 5906,
+  "color": "#f8f8f8"
+ },
+ "cleanex-india/packaging-15": {
+  "kind": "image",
+  "src": "media/cleanex-india/packaging-15.webp",
+  "sm": "media/cleanex-india/packaging-15-sm.webp",
+  "w": 5906,
+  "h": 5906,
+  "color": "#f8f8f8"
+ },
+ "cleanex-india/packaging-16": {
+  "kind": "image",
+  "src": "media/cleanex-india/packaging-16.webp",
+  "sm": "media/cleanex-india/packaging-16-sm.webp",
+  "w": 5906,
+  "h": 5906,
+  "color": "#f8f8f8"
+ },
+ "cleanex-india/packaging-17": {
+  "kind": "image",
+  "src": "media/cleanex-india/packaging-17.webp",
+  "sm": "media/cleanex-india/packaging-17-sm.webp",
+  "w": 5906,
+  "h": 4018,
+  "color": "#f8f8f8"
+ },
+ "copfab/print-01": {
+  "kind": "image",
+  "src": "media/copfab/print-01.webp",
+  "sm": "media/copfab/print-01-sm.webp",
+  "w": 2552,
+  "h": 4536,
+  "color": "#f8f8f8"
+ },
+ "copfab/print-02": {
+  "kind": "image",
+  "src": "media/copfab/print-02.webp",
+  "sm": "media/copfab/print-02-sm.webp",
+  "w": 2552,
+  "h": 4536,
+  "color": "#f8f8f8"
+ },
+ "copfab/print-03": {
+  "kind": "image",
+  "src": "media/copfab/print-03.webp",
+  "sm": "media/copfab/print-03-sm.webp",
+  "w": 2552,
+  "h": 4536,
+  "color": "#f8f8f8"
+ },
+ "copfab/print-04": {
+  "kind": "image",
+  "src": "media/copfab/print-04.webp",
+  "sm": "media/copfab/print-04-sm.webp",
+  "w": 2552,
+  "h": 4536,
+  "color": "#f8f8f8"
+ },
+ "copfab/print-05": {
+  "kind": "image",
+  "src": "media/copfab/print-05.webp",
+  "sm": "media/copfab/print-05-sm.webp",
+  "w": 720,
+  "h": 1280,
+  "color": "#f8f8f8"
+ },
+ "copfab/print-06": {
+  "kind": "image",
+  "src": "media/copfab/print-06.webp",
+  "sm": "media/copfab/print-06-sm.webp",
+  "w": 1064,
+  "h": 681,
+  "color": "#f8f8f8"
+ },
+ "emailers/emailers-01": {
+  "kind": "image",
+  "src": "media/emailers/emailers-01.webp",
+  "sm": "media/emailers/emailers-01-sm.webp",
+  "w": 624,
+  "h": 1000,
+  "color": "#e8e8e8"
+ },
+ "emailers/emailers-02": {
+  "kind": "image",
+  "src": "media/emailers/emailers-02.webp",
+  "sm": "media/emailers/emailers-02-sm.webp",
+  "w": 518,
+  "h": 1000,
+  "color": "#e8e8e8"
+ },
+ "emailers/emailers-03": {
+  "kind": "image",
+  "src": "media/emailers/emailers-03.webp",
+  "sm": "media/emailers/emailers-03-sm.webp",
+  "w": 632,
+  "h": 1000,
+  "color": "#e8e8e8"
+ },
+ "emailers/emailers-04": {
+  "kind": "gif",
+  "src": "media/emailers/emailers-04.webp",
+  "sm": "media/emailers/emailers-04-sm.webp",
+  "w": 700,
+  "h": 1231,
+  "color": "#d8c8b8"
+ },
+ "emailers/emailers-05": {
+  "kind": "image",
+  "src": "media/emailers/emailers-05.webp",
+  "sm": "media/emailers/emailers-05-sm.webp",
+  "w": 320,
+  "h": 1000,
+  "color": "#b888d8"
+ },
+ "emailers/emailers-06": {
+  "kind": "image",
+  "src": "media/emailers/emailers-06.webp",
+  "sm": "media/emailers/emailers-06-sm.webp",
+  "w": 2000,
+  "h": 4043,
+  "color": "#f8e8c8"
+ },
+ "emailers/emailers-07": {
+  "kind": "image",
+  "src": "media/emailers/emailers-07.webp",
+  "sm": "media/emailers/emailers-07-sm.webp",
+  "w": 2000,
+  "h": 4963,
+  "color": "#b8e8e8"
+ },
+ "emailers/emailers-08": {
+  "kind": "image",
+  "src": "media/emailers/emailers-08.webp",
+  "sm": "media/emailers/emailers-08-sm.webp",
+  "w": 486,
+  "h": 1000,
+  "color": "#f8f8f8"
+ },
+ "emailers/emailers-09": {
+  "kind": "image",
+  "src": "media/emailers/emailers-09.webp",
+  "sm": "media/emailers/emailers-09-sm.webp",
+  "w": 700,
+  "h": 797,
+  "color": "#e8e8e8"
+ },
+ "emailers/emailers-10": {
+  "kind": "image",
+  "src": "media/emailers/emailers-10.webp",
+  "sm": "media/emailers/emailers-10-sm.webp",
+  "w": 492,
+  "h": 1000,
+  "color": "#f8f8f8"
+ },
+ "emailers/emailers-11": {
+  "kind": "image",
+  "src": "media/emailers/emailers-11.webp",
+  "sm": "media/emailers/emailers-11-sm.webp",
+  "w": 570,
+  "h": 1000,
+  "color": "#f8f8f8"
+ },
+ "emailers/emailers-12": {
+  "kind": "image",
+  "src": "media/emailers/emailers-12.webp",
+  "sm": "media/emailers/emailers-12-sm.webp",
+  "w": 592,
+  "h": 1000,
+  "color": "#f8f8f8"
+ },
+ "emailers/emailers-13": {
+  "kind": "image",
+  "src": "media/emailers/emailers-13.webp",
+  "sm": "media/emailers/emailers-13-sm.webp",
+  "w": 742,
+  "h": 1000,
+  "color": "#f8f8f8"
+ },
+ "emailers/emailers-14": {
+  "kind": "image",
+  "src": "media/emailers/emailers-14.webp",
+  "sm": "media/emailers/emailers-14-sm.webp",
+  "w": 600,
+  "h": 1000,
+  "color": "#f8f8f8"
+ },
+ "emailers/emailers-15": {
+  "kind": "image",
+  "src": "media/emailers/emailers-15.webp",
+  "sm": "media/emailers/emailers-15-sm.webp",
+  "w": 482,
+  "h": 1000,
+  "color": "#c89848"
+ },
+ "emailers/emailers-16": {
+  "kind": "image",
+  "src": "media/emailers/emailers-16.webp",
+  "sm": "media/emailers/emailers-16-sm.webp",
+  "w": 562,
+  "h": 1000,
+  "color": "#883888"
+ },
+ "emailers/emailers-17": {
+  "kind": "image",
+  "src": "media/emailers/emailers-17.webp",
+  "sm": "media/emailers/emailers-17-sm.webp",
+  "w": 602,
+  "h": 1000,
+  "color": "#e8b828"
+ },
+ "forest-essentials/mark-01": {
+  "kind": "image",
+  "src": "media/forest-essentials/mark-01.webp",
+  "sm": "media/forest-essentials/mark-01-sm.webp",
+  "w": 794,
+  "h": 333,
+  "color": "#f8f8f8"
+ },
+ "forest-essentials/packaging-01": {
+  "kind": "image",
+  "src": "media/forest-essentials/packaging-01.webp",
+  "sm": "media/forest-essentials/packaging-01-sm.webp",
+  "w": 1280,
+  "h": 853,
+  "color": "#181838"
+ },
+ "forest-essentials/packaging-02": {
+  "kind": "image",
+  "src": "media/forest-essentials/packaging-02.webp",
+  "sm": "media/forest-essentials/packaging-02-sm.webp",
+  "w": 1280,
+  "h": 853,
+  "color": "#b8b8a8"
+ },
+ "identities/arata-01": {
+  "kind": "image",
+  "src": "media/identities/arata-01.webp",
+  "sm": "media/identities/arata-01-sm.webp",
+  "w": 2424,
+  "h": 3346,
+  "color": "#f8f8f8"
+ },
+ "identities/bmn-group-01": {
+  "kind": "image",
+  "src": "media/identities/bmn-group-01.webp",
+  "sm": "media/identities/bmn-group-01-sm.webp",
+  "w": 3000,
+  "h": 1500,
+  "color": "#f8f8f8"
+ },
+ "identities/gmc-01": {
+  "kind": "image",
+  "src": "media/identities/gmc-01.webp",
+  "sm": "media/identities/gmc-01-sm.webp",
+  "w": 1280,
+  "h": 1062,
+  "color": "#d8d8d8"
+ },
+ "identities/gmc-02": {
+  "kind": "image",
+  "src": "media/identities/gmc-02.webp",
+  "sm": "media/identities/gmc-02-sm.webp",
+  "w": 695,
+  "h": 695,
+  "color": "#a88878"
+ },
+ "identities/kapha-01": {
+  "kind": "image",
+  "src": "media/identities/kapha-01.webp",
+  "sm": "media/identities/kapha-01-sm.webp",
+  "w": 1280,
+  "h": 1273,
+  "color": "#082858"
+ },
+ "identities/kapha-02": {
+  "kind": "image",
+  "src": "media/identities/kapha-02.webp",
+  "sm": "media/identities/kapha-02-sm.webp",
+  "w": 1280,
+  "h": 853,
+  "color": "#383838"
+ },
+ "identities/kapha-03": {
+  "kind": "image",
+  "src": "media/identities/kapha-03.webp",
+  "sm": "media/identities/kapha-03-sm.webp",
+  "w": 1280,
+  "h": 1265,
+  "color": "#e8e8e8"
+ },
+ "identities/kapha-04": {
+  "kind": "image",
+  "src": "media/identities/kapha-04.webp",
+  "sm": "media/identities/kapha-04-sm.webp",
+  "w": 1280,
+  "h": 853,
+  "color": "#383838"
+ },
+ "identities/nuktacheen-01": {
+  "kind": "image",
+  "src": "media/identities/nuktacheen-01.webp",
+  "sm": "media/identities/nuktacheen-01-sm.webp",
+  "w": 3373,
+  "h": 1129,
+  "color": "#f8f8f8"
+ },
+ "identities/stationery-01": {
+  "kind": "image",
+  "src": "media/identities/stationery-01.webp",
+  "sm": "media/identities/stationery-01-sm.webp",
+  "w": 2000,
+  "h": 2000,
+  "color": "#f8f8f8"
+ },
+ "identities/stationery-02": {
+  "kind": "image",
+  "src": "media/identities/stationery-02.webp",
+  "sm": "media/identities/stationery-02-sm.webp",
+  "w": 2000,
+  "h": 2000,
+  "color": "#f8f8f8"
+ },
+ "identities/werd-wesham-01": {
+  "kind": "image",
+  "src": "media/identities/werd-wesham-01.webp",
+  "sm": "media/identities/werd-wesham-01-sm.webp",
+  "w": 1279,
+  "h": 1280,
+  "color": "#f8f8f8"
+ },
+ "identities/werd-wesham-02": {
+  "kind": "image",
+  "src": "media/identities/werd-wesham-02.webp",
+  "sm": "media/identities/werd-wesham-02-sm.webp",
+  "w": 959,
+  "h": 737,
+  "color": "#f8f8f8"
+ },
+ "identities/werd-wesham-03": {
+  "kind": "image",
+  "src": "media/identities/werd-wesham-03.webp",
+  "sm": "media/identities/werd-wesham-03-sm.webp",
+  "w": 1138,
+  "h": 988,
+  "color": "#f8f8f8"
+ },
+ "identities/werd-wesham-04": {
+  "kind": "image",
+  "src": "media/identities/werd-wesham-04.webp",
+  "sm": "media/identities/werd-wesham-04-sm.webp",
+  "w": 1280,
+  "h": 1280,
+  "color": "#f8f8f8"
+ },
+ "jstor/mark-01": {
+  "kind": "image",
+  "src": "media/jstor/mark-01.webp",
+  "sm": "media/jstor/mark-01-sm.webp",
+  "w": 2000,
+  "h": 968,
+  "color": "#f8f8f8"
+ },
+ "jstor/posts-01": {
+  "kind": "image",
+  "src": "media/jstor/posts-01.webp",
+  "sm": "media/jstor/posts-01-sm.webp",
+  "w": 1280,
+  "h": 1280,
+  "color": "#c8c8c8"
+ },
+ "jstor/posts-02": {
+  "kind": "image",
+  "src": "media/jstor/posts-02.webp",
+  "sm": "media/jstor/posts-02-sm.webp",
+  "w": 1280,
+  "h": 1280,
+  "color": "#080808"
+ },
+ "jstor/posts-03": {
+  "kind": "image",
+  "src": "media/jstor/posts-03.webp",
+  "sm": "media/jstor/posts-03-sm.webp",
+  "w": 1280,
+  "h": 1280,
+  "color": "#c8c8c8"
+ },
+ "jstor/posts-04": {
+  "kind": "image",
+  "src": "media/jstor/posts-04.webp",
+  "sm": "media/jstor/posts-04-sm.webp",
+  "w": 1280,
+  "h": 1280,
+  "color": "#f8d878"
+ },
+ "jstor/posts-05": {
+  "kind": "image",
+  "src": "media/jstor/posts-05.webp",
+  "sm": "media/jstor/posts-05-sm.webp",
+  "w": 1280,
+  "h": 1280,
+  "color": "#f8f8f8"
+ },
+ "jstor/posts-06": {
+  "kind": "image",
+  "src": "media/jstor/posts-06.webp",
+  "sm": "media/jstor/posts-06-sm.webp",
+  "w": 1280,
+  "h": 1280,
+  "color": "#f8f8f8"
+ },
+ "jstor/posts-07": {
+  "kind": "image",
+  "src": "media/jstor/posts-07.webp",
+  "sm": "media/jstor/posts-07-sm.webp",
+  "w": 1280,
+  "h": 1280,
+  "color": "#982818"
+ },
+ "khadi-essentials/mark-01": {
+  "kind": "image",
+  "src": "media/khadi-essentials/mark-01.webp",
+  "sm": "media/khadi-essentials/mark-01-sm.webp",
+  "w": 1252,
+  "h": 1280,
+  "color": "#f8f8f8"
+ },
+ "khadi-essentials/packaging-01": {
+  "kind": "image",
+  "src": "media/khadi-essentials/packaging-01.webp",
+  "sm": "media/khadi-essentials/packaging-01-sm.webp",
+  "w": 1000,
+  "h": 750,
+  "color": "#f8f8f8"
+ },
+ "khadi-essentials/packaging-02": {
+  "kind": "image",
+  "src": "media/khadi-essentials/packaging-02.webp",
+  "sm": "media/khadi-essentials/packaging-02-sm.webp",
+  "w": 1000,
+  "h": 750,
+  "color": "#f8f8f8"
+ },
+ "khadi-essentials/packaging-03": {
+  "kind": "image",
+  "src": "media/khadi-essentials/packaging-03.webp",
+  "sm": "media/khadi-essentials/packaging-03-sm.webp",
+  "w": 1000,
+  "h": 750,
+  "color": "#f8f8f8"
+ },
+ "khadi-essentials/packaging-04": {
+  "kind": "image",
+  "src": "media/khadi-essentials/packaging-04.webp",
+  "sm": "media/khadi-essentials/packaging-04-sm.webp",
+  "w": 1000,
+  "h": 668,
+  "color": "#f8f8f8"
+ },
+ "khadi-essentials/packaging-05": {
+  "kind": "image",
+  "src": "media/khadi-essentials/packaging-05.webp",
+  "sm": "media/khadi-essentials/packaging-05-sm.webp",
+  "w": 1000,
+  "h": 668,
+  "color": "#f8f8f8"
+ },
+ "khadi-essentials/packaging-06": {
+  "kind": "image",
+  "src": "media/khadi-essentials/packaging-06.webp",
+  "sm": "media/khadi-essentials/packaging-06-sm.webp",
+  "w": 1000,
+  "h": 668,
+  "color": "#f8f8f8"
+ },
+ "khadi-essentials/packaging-07": {
+  "kind": "image",
+  "src": "media/khadi-essentials/packaging-07.webp",
+  "sm": "media/khadi-essentials/packaging-07-sm.webp",
+  "w": 898,
+  "h": 1000,
+  "color": "#f8f8f8"
+ },
+ "khadi-essentials/packaging-08": {
+  "kind": "image",
+  "src": "media/khadi-essentials/packaging-08.webp",
+  "sm": "media/khadi-essentials/packaging-08-sm.webp",
+  "w": 898,
+  "h": 1000,
+  "color": "#f8f8f8"
+ },
+ "khadi-essentials/packaging-09": {
+  "kind": "image",
+  "src": "media/khadi-essentials/packaging-09.webp",
+  "sm": "media/khadi-essentials/packaging-09-sm.webp",
+  "w": 898,
+  "h": 1000,
+  "color": "#f8f8f8"
+ },
+ "khadi-essentials/packaging-10": {
+  "kind": "image",
+  "src": "media/khadi-essentials/packaging-10.webp",
+  "sm": "media/khadi-essentials/packaging-10-sm.webp",
+  "w": 1000,
+  "h": 1000,
+  "color": "#f8f8f8"
+ },
+ "khadi-essentials/packaging-11": {
+  "kind": "image",
+  "src": "media/khadi-essentials/packaging-11.webp",
+  "sm": "media/khadi-essentials/packaging-11-sm.webp",
+  "w": 1000,
+  "h": 1000,
+  "color": "#f8f8f8"
+ },
+ "khadi-essentials/packaging-12": {
+  "kind": "image",
+  "src": "media/khadi-essentials/packaging-12.webp",
+  "sm": "media/khadi-essentials/packaging-12-sm.webp",
+  "w": 1000,
+  "h": 1000,
+  "color": "#f8f8f8"
+ },
+ "khadi-essentials/packaging-13": {
+  "kind": "image",
+  "src": "media/khadi-essentials/packaging-13.webp",
+  "sm": "media/khadi-essentials/packaging-13-sm.webp",
+  "w": 898,
+  "h": 1000,
+  "color": "#f8f8f8"
+ },
+ "khadi-essentials/packaging-14": {
+  "kind": "image",
+  "src": "media/khadi-essentials/packaging-14.webp",
+  "sm": "media/khadi-essentials/packaging-14-sm.webp",
+  "w": 898,
+  "h": 1000,
+  "color": "#f8f8f8"
+ },
+ "khadi-essentials/packaging-15": {
+  "kind": "image",
+  "src": "media/khadi-essentials/packaging-15.webp",
+  "sm": "media/khadi-essentials/packaging-15-sm.webp",
+  "w": 898,
+  "h": 1000,
+  "color": "#f8f8f8"
+ },
+ "motion/films-01": {
+  "kind": "video",
+  "src": "media/motion/films-01.mp4",
+  "loop": "media/motion/films-01-loop.mp4",
+  "poster": "media/motion/films-01.webp",
+  "w": 1920,
+  "h": 1080,
+  "duration": 15.5,
+  "audio": true,
+  "color": "#d84858"
+ },
+ "motion/films-02": {
+  "kind": "video",
+  "src": "media/motion/films-02.mp4",
+  "loop": "media/motion/films-02-loop.mp4",
+  "poster": "media/motion/films-02.webp",
+  "w": 1080,
+  "h": 1920,
+  "duration": 26,
+  "audio": true,
+  "color": "#e8d8d8"
+ },
+ "motion/films-03": {
+  "kind": "video",
+  "src": "media/motion/films-03.mp4",
+  "loop": "media/motion/films-03-loop.mp4",
+  "poster": "media/motion/films-03.webp",
+  "w": 1080,
+  "h": 1920,
+  "duration": 21.1,
+  "audio": true,
+  "color": "#f8f8f8"
+ },
+ "motion/films-04": {
+  "kind": "video",
+  "src": "media/motion/films-04.mp4",
+  "loop": "media/motion/films-04-loop.mp4",
+  "poster": "media/motion/films-04.webp",
+  "w": 1080,
+  "h": 1080,
+  "duration": 39.4,
+  "audio": true,
+  "color": "#f8f8e8"
+ },
+ "motion/films-05": {
+  "kind": "video",
+  "src": "media/motion/films-05.mp4",
+  "loop": "media/motion/films-05-loop.mp4",
+  "poster": "media/motion/films-05.webp",
+  "w": 1080,
+  "h": 1080,
+  "duration": 8.6,
+  "audio": true,
+  "color": "#f8e8e8"
+ },
+ "motion/films-06": {
+  "kind": "video",
+  "src": "media/motion/films-06.mp4",
+  "loop": "media/motion/films-06-loop.mp4",
+  "poster": "media/motion/films-06.webp",
+  "w": 1920,
+  "h": 1080,
+  "duration": 8.6,
+  "audio": true,
+  "color": "#38d8d8"
+ },
+ "motion/films-07": {
+  "kind": "video",
+  "src": "media/motion/films-07.mp4",
+  "loop": "media/motion/films-07-loop.mp4",
+  "poster": "media/motion/films-07.webp",
+  "w": 1280,
+  "h": 720,
+  "duration": 40.9,
+  "audio": true,
+  "color": "#484848"
+ },
+ "motion/films-08": {
+  "kind": "video",
+  "src": "media/motion/films-08.mp4",
+  "loop": "media/motion/films-08-loop.mp4",
+  "poster": "media/motion/films-08.webp",
+  "w": 1920,
+  "h": 1080,
+  "duration": 59.6,
+  "audio": true,
+  "color": "#e8e8e8"
+ },
+ "motion/films-09": {
+  "kind": "video",
+  "src": "media/motion/films-09.mp4",
+  "loop": "media/motion/films-09-loop.mp4",
+  "poster": "media/motion/films-09.webp",
+  "w": 1080,
+  "h": 1920,
+  "duration": 10,
+  "audio": true,
+  "color": "#f8f8f8"
+ },
+ "motion/films-10": {
+  "kind": "video",
+  "src": "media/motion/films-10.mp4",
+  "loop": "media/motion/films-10-loop.mp4",
+  "poster": "media/motion/films-10.webp",
+  "w": 1080,
+  "h": 1080,
+  "duration": 11,
+  "audio": true,
+  "color": "#e84838"
+ },
+ "motion/films-11": {
+  "kind": "video",
+  "src": "media/motion/films-11.mp4",
+  "loop": "media/motion/films-11-loop.mp4",
+  "poster": "media/motion/films-11.webp",
+  "w": 1920,
+  "h": 1080,
+  "duration": 19,
+  "audio": true,
+  "color": "#f8f8f8"
+ },
+ "motion/performance-01": {
+  "kind": "video",
+  "src": "media/motion/performance-01.mp4",
+  "loop": "media/motion/performance-01-loop.mp4",
+  "poster": "media/motion/performance-01.webp",
+  "w": 1920,
+  "h": 1080,
+  "duration": 20,
+  "audio": true,
+  "color": "#987868"
+ },
+ "motion/performance-02": {
+  "kind": "video",
+  "src": "media/motion/performance-02.mp4",
+  "loop": "media/motion/performance-02-loop.mp4",
+  "poster": "media/motion/performance-02.webp",
+  "w": 1080,
+  "h": 1080,
+  "duration": 10,
+  "audio": true,
+  "color": "#d8b8a8"
+ },
+ "motion/performance-03": {
+  "kind": "video",
+  "src": "media/motion/performance-03.mp4",
+  "loop": "media/motion/performance-03-loop.mp4",
+  "poster": "media/motion/performance-03.webp",
+  "w": 1080,
+  "h": 1080,
+  "duration": 5,
+  "audio": true,
+  "color": "#d8d8b8"
+ },
+ "motion/performance-04": {
+  "kind": "video",
+  "src": "media/motion/performance-04.mp4",
+  "loop": "media/motion/performance-04-loop.mp4",
+  "poster": "media/motion/performance-04.webp",
+  "w": 1080,
+  "h": 1080,
+  "duration": 11.3,
+  "audio": true,
+  "color": "#f8f8f8"
+ },
+ "motion/performance-05": {
+  "kind": "video",
+  "src": "media/motion/performance-05.mp4",
+  "loop": "media/motion/performance-05-loop.mp4",
+  "poster": "media/motion/performance-05.webp",
+  "w": 1080,
+  "h": 1080,
+  "duration": 5,
+  "audio": true,
+  "color": "#b89868"
+ },
+ "motion/performance-06": {
+  "kind": "video",
+  "src": "media/motion/performance-06.mp4",
+  "loop": "media/motion/performance-06-loop.mp4",
+  "poster": "media/motion/performance-06.webp",
+  "w": 1080,
+  "h": 1080,
+  "duration": 5,
+  "audio": true,
+  "color": "#f8e8e8"
+ },
+ "motion/performance-07": {
+  "kind": "video",
+  "src": "media/motion/performance-07.mp4",
+  "loop": "media/motion/performance-07-loop.mp4",
+  "poster": "media/motion/performance-07.webp",
+  "w": 1080,
+  "h": 1080,
+  "duration": 8.1,
+  "audio": true,
+  "color": "#d8b888"
+ },
+ "motion/performance-08": {
+  "kind": "video",
+  "src": "media/motion/performance-08.mp4",
+  "loop": "media/motion/performance-08-loop.mp4",
+  "poster": "media/motion/performance-08.webp",
+  "w": 1080,
+  "h": 1080,
+  "duration": 5,
+  "audio": true,
+  "color": "#f8e8c8"
+ },
+ "motion/performance-09": {
+  "kind": "video",
+  "src": "media/motion/performance-09.mp4",
+  "loop": "media/motion/performance-09-loop.mp4",
+  "poster": "media/motion/performance-09.webp",
+  "w": 1080,
+  "h": 1080,
+  "duration": 16.6,
+  "audio": true,
+  "color": "#9888d8"
+ },
+ "motion/performance-10": {
+  "kind": "video",
+  "src": "media/motion/performance-10.mp4",
+  "loop": "media/motion/performance-10-loop.mp4",
+  "poster": "media/motion/performance-10.webp",
+  "w": 1080,
+  "h": 1080,
+  "duration": 5,
+  "audio": true,
+  "color": "#f8f8f8"
+ },
+ "motion/performance-11": {
+  "kind": "video",
+  "src": "media/motion/performance-11.mp4",
+  "loop": "media/motion/performance-11-loop.mp4",
+  "poster": "media/motion/performance-11.webp",
+  "w": 1080,
+  "h": 1080,
+  "duration": 8.1,
+  "audio": true,
+  "color": "#f8d8b8"
+ },
+ "motion/performance-12": {
+  "kind": "video",
+  "src": "media/motion/performance-12.mp4",
+  "loop": "media/motion/performance-12-loop.mp4",
+  "poster": "media/motion/performance-12.webp",
+  "w": 1080,
+  "h": 1920,
+  "duration": 21.3,
+  "audio": true,
+  "color": "#f8d8e8"
+ },
+ "motion/performance-13": {
+  "kind": "video",
+  "src": "media/motion/performance-13.mp4",
+  "loop": "media/motion/performance-13-loop.mp4",
+  "poster": "media/motion/performance-13.webp",
+  "w": 1080,
+  "h": 1080,
+  "duration": 5,
+  "audio": true,
+  "color": "#e8d8c8"
+ },
+ "motion/performance-14": {
+  "kind": "video",
+  "src": "media/motion/performance-14.mp4",
+  "loop": "media/motion/performance-14-loop.mp4",
+  "poster": "media/motion/performance-14.webp",
+  "w": 1080,
+  "h": 1920,
+  "duration": 25.5,
+  "audio": true,
+  "color": "#382828"
+ },
+ "motion/performance-15": {
+  "kind": "video",
+  "src": "media/motion/performance-15.mp4",
+  "loop": "media/motion/performance-15-loop.mp4",
+  "poster": "media/motion/performance-15.webp",
+  "w": 1080,
+  "h": 1920,
+  "duration": 30.7,
+  "audio": true,
+  "color": "#886858"
+ },
+ "motion/performance-16": {
+  "kind": "video",
+  "src": "media/motion/performance-16.mp4",
+  "loop": "media/motion/performance-16-loop.mp4",
+  "poster": "media/motion/performance-16.webp",
+  "w": 1080,
+  "h": 1080,
+  "duration": 7.8,
+  "audio": true,
+  "color": "#686868"
+ },
+ "motion/performance-17": {
+  "kind": "video",
+  "src": "media/motion/performance-17.mp4",
+  "loop": "media/motion/performance-17-loop.mp4",
+  "poster": "media/motion/performance-17.webp",
+  "w": 1080,
+  "h": 1080,
+  "duration": 10.1,
+  "audio": true,
+  "color": "#382828"
+ },
+ "motion/performance-18": {
+  "kind": "video",
+  "src": "media/motion/performance-18.mp4",
+  "loop": "media/motion/performance-18-loop.mp4",
+  "poster": "media/motion/performance-18.webp",
+  "w": 1080,
+  "h": 1080,
+  "duration": 8.9,
+  "audio": true,
+  "color": "#f8f8e8"
+ },
+ "motion/performance-19": {
+  "kind": "video",
+  "src": "media/motion/performance-19.mp4",
+  "loop": "media/motion/performance-19-loop.mp4",
+  "poster": "media/motion/performance-19.webp",
+  "w": 1080,
+  "h": 1080,
+  "duration": 5.9,
+  "audio": true,
+  "color": "#e8d8a8"
+ },
+ "motion/performance-20": {
+  "kind": "video",
+  "src": "media/motion/performance-20.mp4",
+  "loop": "media/motion/performance-20-loop.mp4",
+  "poster": "media/motion/performance-20.webp",
+  "w": 1080,
+  "h": 1920,
+  "duration": 29.6,
+  "audio": true,
+  "color": "#281818"
+ },
+ "motion/performance-21": {
+  "kind": "video",
+  "src": "media/motion/performance-21.mp4",
+  "loop": "media/motion/performance-21-loop.mp4",
+  "poster": "media/motion/performance-21.webp",
+  "w": 1080,
+  "h": 1920,
+  "duration": 27.9,
+  "audio": true,
+  "color": "#c8c8d8"
+ },
+ "motion/performance-22": {
+  "kind": "video",
+  "src": "media/motion/performance-22.mp4",
+  "loop": "media/motion/performance-22-loop.mp4",
+  "poster": "media/motion/performance-22.webp",
+  "w": 1080,
+  "h": 1080,
+  "duration": 23.3,
+  "audio": true,
+  "color": "#e8b8a8"
+ },
+ "motion/performance-23": {
+  "kind": "video",
+  "src": "media/motion/performance-23.mp4",
+  "loop": "media/motion/performance-23-loop.mp4",
+  "poster": "media/motion/performance-23.webp",
+  "w": 1920,
+  "h": 1080,
+  "duration": 32.2,
+  "audio": true,
+  "color": "#e8e8d8"
+ },
+ "motion/performance-24": {
+  "kind": "video",
+  "src": "media/motion/performance-24.mp4",
+  "loop": "media/motion/performance-24-loop.mp4",
+  "poster": "media/motion/performance-24.webp",
+  "w": 1920,
+  "h": 1080,
+  "duration": 26,
+  "audio": true,
+  "color": "#686868"
+ },
+ "motion/performance-25": {
+  "kind": "video",
+  "src": "media/motion/performance-25.mp4",
+  "loop": "media/motion/performance-25-loop.mp4",
+  "poster": "media/motion/performance-25.webp",
+  "w": 1080,
+  "h": 1080,
+  "duration": 32.6,
+  "audio": true,
+  "color": "#d8c878"
+ },
+ "motion/performance-26": {
+  "kind": "video",
+  "src": "media/motion/performance-26.mp4",
+  "loop": "media/motion/performance-26-loop.mp4",
+  "poster": "media/motion/performance-26.webp",
+  "w": 1080,
+  "h": 1080,
+  "duration": 8.7,
+  "audio": true,
+  "color": "#181818"
+ },
+ "motion/performance-27": {
+  "kind": "video",
+  "src": "media/motion/performance-27.mp4",
+  "loop": "media/motion/performance-27-loop.mp4",
+  "poster": "media/motion/performance-27.webp",
+  "w": 1920,
+  "h": 1080,
+  "duration": 26.4,
+  "audio": true,
+  "color": "#080808"
+ },
+ "motion/performance-28": {
+  "kind": "video",
+  "src": "media/motion/performance-28.mp4",
+  "loop": "media/motion/performance-28-loop.mp4",
+  "poster": "media/motion/performance-28.webp",
+  "w": 1080,
+  "h": 1080,
+  "duration": 8,
+  "audio": true,
+  "color": "#d8d8d8"
+ },
+ "motion/performance-29": {
+  "kind": "video",
+  "src": "media/motion/performance-29.mp4",
+  "loop": "media/motion/performance-29-loop.mp4",
+  "poster": "media/motion/performance-29.webp",
+  "w": 1920,
+  "h": 1080,
+  "duration": 38.9,
+  "audio": true,
+  "color": "#a8a868"
+ },
+ "motion/performance-30": {
+  "kind": "video",
+  "src": "media/motion/performance-30.mp4",
+  "loop": "media/motion/performance-30-loop.mp4",
+  "poster": "media/motion/performance-30.webp",
+  "w": 1080,
+  "h": 1080,
+  "duration": 22.3,
+  "audio": true,
+  "color": "#e8c8a8"
+ },
+ "motion/performance-31": {
+  "kind": "video",
+  "src": "media/motion/performance-31.mp4",
+  "loop": "media/motion/performance-31-loop.mp4",
+  "poster": "media/motion/performance-31.webp",
+  "w": 1080,
+  "h": 1920,
+  "duration": 23.1,
+  "audio": true,
+  "color": "#d8a878"
+ },
+ "motion/performance-32": {
+  "kind": "video",
+  "src": "media/motion/performance-32.mp4",
+  "loop": "media/motion/performance-32-loop.mp4",
+  "poster": "media/motion/performance-32.webp",
+  "w": 1080,
+  "h": 1920,
+  "duration": 18.6,
+  "audio": true,
+  "color": "#a8c8d8"
+ },
+ "motion/performance-33": {
+  "kind": "video",
+  "src": "media/motion/performance-33.mp4",
+  "loop": "media/motion/performance-33-loop.mp4",
+  "poster": "media/motion/performance-33.webp",
+  "w": 1080,
+  "h": 1080,
+  "duration": 17.5,
+  "audio": true,
+  "color": "#f8f8f8"
+ },
+ "sanfe/mark-01": {
+  "kind": "image",
+  "src": "media/sanfe/mark-01.webp",
+  "sm": "media/sanfe/mark-01-sm.webp",
+  "w": 1000,
+  "h": 524,
+  "color": "#f8f8f8"
+ },
+ "sanfe/packaging-01": {
+  "kind": "image",
+  "src": "media/sanfe/packaging-01.webp",
+  "sm": "media/sanfe/packaging-01-sm.webp",
+  "w": 1000,
+  "h": 658,
+  "color": "#e8e8e8"
+ },
+ "sanfe/packaging-02": {
+  "kind": "image",
+  "src": "media/sanfe/packaging-02.webp",
+  "sm": "media/sanfe/packaging-02-sm.webp",
+  "w": 1000,
+  "h": 658,
+  "color": "#e8e8e8"
+ },
+ "sanfe/packaging-03": {
+  "kind": "image",
+  "src": "media/sanfe/packaging-03.webp",
+  "sm": "media/sanfe/packaging-03-sm.webp",
+  "w": 1000,
+  "h": 1000,
+  "color": "#f8f8f8"
+ },
+ "sanfe/packaging-04": {
+  "kind": "image",
+  "src": "media/sanfe/packaging-04.webp",
+  "sm": "media/sanfe/packaging-04-sm.webp",
+  "w": 1000,
+  "h": 1000,
+  "color": "#f8f8f8"
+ },
+ "sanfe/packaging-05": {
+  "kind": "image",
+  "src": "media/sanfe/packaging-05.webp",
+  "sm": "media/sanfe/packaging-05-sm.webp",
+  "w": 1000,
+  "h": 1000,
+  "color": "#f8f8f8"
+ },
+ "sanfe/packaging-06": {
+  "kind": "image",
+  "src": "media/sanfe/packaging-06.webp",
+  "sm": "media/sanfe/packaging-06-sm.webp",
+  "w": 1000,
+  "h": 666,
+  "color": "#7868a8"
+ },
+ "sanfe/packaging-07": {
+  "kind": "image",
+  "src": "media/sanfe/packaging-07.webp",
+  "sm": "media/sanfe/packaging-07-sm.webp",
+  "w": 1000,
+  "h": 666,
+  "color": "#b8a8d8"
+ },
+ "sanfe/packaging-08": {
+  "kind": "image",
+  "src": "media/sanfe/packaging-08.webp",
+  "sm": "media/sanfe/packaging-08-sm.webp",
+  "w": 1000,
+  "h": 666,
+  "color": "#f8f8f8"
+ },
+ "sanfe/packaging-09": {
+  "kind": "image",
+  "src": "media/sanfe/packaging-09.webp",
+  "sm": "media/sanfe/packaging-09-sm.webp",
+  "w": 1000,
+  "h": 1000,
+  "color": "#d8d8d8"
+ },
+ "sanfe/packaging-10": {
+  "kind": "image",
+  "src": "media/sanfe/packaging-10.webp",
+  "sm": "media/sanfe/packaging-10-sm.webp",
+  "w": 1000,
+  "h": 1000,
+  "color": "#d8d8d8"
+ },
+ "sanfe/packaging-11": {
+  "kind": "image",
+  "src": "media/sanfe/packaging-11.webp",
+  "sm": "media/sanfe/packaging-11-sm.webp",
+  "w": 1000,
+  "h": 736,
+  "color": "#d8d8d8"
+ },
+ "site/cover-branding-01": {
+  "kind": "image",
+  "src": "media/site/cover-branding-01.webp",
+  "sm": "media/site/cover-branding-01-sm.webp",
+  "w": 6000,
+  "h": 3376,
+  "color": "#c8f8f8"
+ },
+ "site/cover-packaging-01": {
+  "kind": "image",
+  "src": "media/site/cover-packaging-01.webp",
+  "sm": "media/site/cover-packaging-01-sm.webp",
+  "w": 1280,
+  "h": 853,
+  "color": "#b8b8a8"
+ },
+ "site/portrait-01": {
+  "kind": "image",
+  "src": "media/site/portrait-01.webp",
+  "sm": "media/site/portrait-01-sm.webp",
+  "w": 322,
+  "h": 313,
+  "color": "#080808"
+ },
+ "social-creatives/posts-01": {
+  "kind": "gif",
+  "src": "media/social-creatives/posts-01.webp",
+  "sm": "media/social-creatives/posts-01-sm.webp",
+  "w": 800,
+  "h": 800,
+  "color": "#c8b8a8"
+ },
+ "social-creatives/posts-02": {
+  "kind": "gif",
+  "src": "media/social-creatives/posts-02.webp",
+  "sm": "media/social-creatives/posts-02-sm.webp",
+  "w": 1080,
+  "h": 1080,
+  "color": "#e8b888"
+ },
+ "social-creatives/posts-03": {
+  "kind": "image",
+  "src": "media/social-creatives/posts-03.webp",
+  "sm": "media/social-creatives/posts-03-sm.webp",
+  "w": 1000,
+  "h": 1000,
+  "color": "#f8f8f8"
+ },
+ "social-creatives/posts-04": {
+  "kind": "image",
+  "src": "media/social-creatives/posts-04.webp",
+  "sm": "media/social-creatives/posts-04-sm.webp",
+  "w": 990,
+  "h": 990,
+  "color": "#f8f8f8"
+ },
+ "social-creatives/posts-05": {
+  "kind": "image",
+  "src": "media/social-creatives/posts-05.webp",
+  "sm": "media/social-creatives/posts-05-sm.webp",
+  "w": 1000,
+  "h": 1000,
+  "color": "#e89828"
+ },
+ "social-creatives/posts-06": {
+  "kind": "image",
+  "src": "media/social-creatives/posts-06.webp",
+  "sm": "media/social-creatives/posts-06-sm.webp",
+  "w": 990,
+  "h": 990,
+  "color": "#888848"
+ },
+ "social-creatives/posts-07": {
+  "kind": "image",
+  "src": "media/social-creatives/posts-07.webp",
+  "sm": "media/social-creatives/posts-07-sm.webp",
+  "w": 1000,
+  "h": 1000,
+  "color": "#f8f8f8"
+ },
+ "social-creatives/posts-08": {
+  "kind": "image",
+  "src": "media/social-creatives/posts-08.webp",
+  "sm": "media/social-creatives/posts-08-sm.webp",
+  "w": 1000,
+  "h": 1000,
+  "color": "#d8d8d8"
+ },
+ "social-creatives/posts-09": {
+  "kind": "image",
+  "src": "media/social-creatives/posts-09.webp",
+  "sm": "media/social-creatives/posts-09-sm.webp",
+  "w": 990,
+  "h": 740,
+  "color": "#f8f8f8"
+ },
+ "social-creatives/posts-10": {
+  "kind": "image",
+  "src": "media/social-creatives/posts-10.webp",
+  "sm": "media/social-creatives/posts-10-sm.webp",
+  "w": 1000,
+  "h": 1000,
+  "color": "#f8f8f8"
+ },
+ "social-creatives/posts-11": {
+  "kind": "image",
+  "src": "media/social-creatives/posts-11.webp",
+  "sm": "media/social-creatives/posts-11-sm.webp",
+  "w": 1000,
+  "h": 1000,
+  "color": "#f89828"
+ },
+ "social-creatives/posts-12": {
+  "kind": "image",
+  "src": "media/social-creatives/posts-12.webp",
+  "sm": "media/social-creatives/posts-12-sm.webp",
+  "w": 1000,
+  "h": 1000,
+  "color": "#d8e8e8"
+ },
+ "social-creatives/posts-13": {
+  "kind": "image",
+  "src": "media/social-creatives/posts-13.webp",
+  "sm": "media/social-creatives/posts-13-sm.webp",
+  "w": 1000,
+  "h": 1000,
+  "color": "#e8e8e8"
+ },
+ "social-creatives/posts-14": {
+  "kind": "image",
+  "src": "media/social-creatives/posts-14.webp",
+  "sm": "media/social-creatives/posts-14-sm.webp",
+  "w": 1000,
+  "h": 1000,
+  "color": "#f8b868"
+ },
+ "social-creatives/posts-15": {
+  "kind": "image",
+  "src": "media/social-creatives/posts-15.webp",
+  "sm": "media/social-creatives/posts-15-sm.webp",
+  "w": 1280,
+  "h": 1280,
+  "color": "#d8d8d8"
+ },
+ "social-creatives/posts-16": {
+  "kind": "image",
+  "src": "media/social-creatives/posts-16.webp",
+  "sm": "media/social-creatives/posts-16-sm.webp",
+  "w": 1000,
+  "h": 1000,
+  "color": "#e8b8d8"
+ },
+ "social-creatives/posts-17": {
+  "kind": "image",
+  "src": "media/social-creatives/posts-17.webp",
+  "sm": "media/social-creatives/posts-17-sm.webp",
+  "w": 1000,
+  "h": 1000,
+  "color": "#e8d8d8"
+ },
+ "social-creatives/posts-18": {
+  "kind": "image",
+  "src": "media/social-creatives/posts-18.webp",
+  "sm": "media/social-creatives/posts-18-sm.webp",
+  "w": 1000,
+  "h": 1000,
+  "color": "#e8b8d8"
+ },
+ "social-creatives/posts-19": {
+  "kind": "image",
+  "src": "media/social-creatives/posts-19.webp",
+  "sm": "media/social-creatives/posts-19-sm.webp",
+  "w": 1000,
+  "h": 1000,
+  "color": "#c8b8a8"
+ },
+ "social-creatives/posts-20": {
+  "kind": "image",
+  "src": "media/social-creatives/posts-20.webp",
+  "sm": "media/social-creatives/posts-20-sm.webp",
+  "w": 1000,
+  "h": 1000,
+  "color": "#f8e8d8"
+ },
+ "social-creatives/posts-21": {
+  "kind": "image",
+  "src": "media/social-creatives/posts-21.webp",
+  "sm": "media/social-creatives/posts-21-sm.webp",
+  "w": 1000,
+  "h": 1000,
+  "color": "#f8e8d8"
+ },
+ "social-creatives/posts-22": {
+  "kind": "image",
+  "src": "media/social-creatives/posts-22.webp",
+  "sm": "media/social-creatives/posts-22-sm.webp",
+  "w": 1000,
+  "h": 1000,
+  "color": "#f8d8d8"
+ },
+ "social-creatives/posts-23": {
+  "kind": "image",
+  "src": "media/social-creatives/posts-23.webp",
+  "sm": "media/social-creatives/posts-23-sm.webp",
+  "w": 1000,
+  "h": 1000,
+  "color": "#f8e8f8"
+ },
+ "social-creatives/posts-24": {
+  "kind": "image",
+  "src": "media/social-creatives/posts-24.webp",
+  "sm": "media/social-creatives/posts-24-sm.webp",
+  "w": 1000,
+  "h": 1000,
+  "color": "#f8f8f8"
+ },
+ "social-creatives/posts-25": {
+  "kind": "image",
+  "src": "media/social-creatives/posts-25.webp",
+  "sm": "media/social-creatives/posts-25-sm.webp",
+  "w": 1000,
+  "h": 1000,
+  "color": "#f8d8d8"
+ },
+ "social-creatives/posts-26": {
+  "kind": "image",
+  "src": "media/social-creatives/posts-26.webp",
+  "sm": "media/social-creatives/posts-26-sm.webp",
+  "w": 1000,
+  "h": 1000,
+  "color": "#f8d8a8"
+ },
+ "social-creatives/posts-27": {
+  "kind": "image",
+  "src": "media/social-creatives/posts-27.webp",
+  "sm": "media/social-creatives/posts-27-sm.webp",
+  "w": 1000,
+  "h": 1000,
+  "color": "#f8e8c8"
+ },
+ "social-creatives/posts-28": {
+  "kind": "image",
+  "src": "media/social-creatives/posts-28.webp",
+  "sm": "media/social-creatives/posts-28-sm.webp",
+  "w": 1000,
+  "h": 1000,
+  "color": "#f8f8f8"
+ },
+ "social-creatives/posts-29": {
+  "kind": "image",
+  "src": "media/social-creatives/posts-29.webp",
+  "sm": "media/social-creatives/posts-29-sm.webp",
+  "w": 1000,
+  "h": 1000,
+  "color": "#f8e8e8"
+ },
+ "social-creatives/posts-30": {
+  "kind": "image",
+  "src": "media/social-creatives/posts-30.webp",
+  "sm": "media/social-creatives/posts-30-sm.webp",
+  "w": 1000,
+  "h": 1000,
+  "color": "#e8e8e8"
+ },
+ "social-creatives/posts-31": {
+  "kind": "image",
+  "src": "media/social-creatives/posts-31.webp",
+  "sm": "media/social-creatives/posts-31-sm.webp",
+  "w": 1000,
+  "h": 1000,
+  "color": "#d8d8c8"
+ },
+ "social-creatives/posts-32": {
+  "kind": "image",
+  "src": "media/social-creatives/posts-32.webp",
+  "sm": "media/social-creatives/posts-32-sm.webp",
+  "w": 1000,
+  "h": 1000,
+  "color": "#e8e8d8"
+ },
+ "social-creatives/posts-33": {
+  "kind": "image",
+  "src": "media/social-creatives/posts-33.webp",
+  "sm": "media/social-creatives/posts-33-sm.webp",
+  "w": 1000,
+  "h": 1000,
+  "color": "#e8d8d8"
+ },
+ "social-creatives/posts-34": {
+  "kind": "image",
+  "src": "media/social-creatives/posts-34.webp",
+  "sm": "media/social-creatives/posts-34-sm.webp",
+  "w": 1000,
+  "h": 1000,
+  "color": "#f8f8d8"
+ },
+ "social-creatives/posts-35": {
+  "kind": "image",
+  "src": "media/social-creatives/posts-35.webp",
+  "sm": "media/social-creatives/posts-35-sm.webp",
+  "w": 990,
+  "h": 990,
+  "color": "#f8f8e8"
+ },
+ "social-creatives/posts-36": {
+  "kind": "image",
+  "src": "media/social-creatives/posts-36.webp",
+  "sm": "media/social-creatives/posts-36-sm.webp",
+  "w": 1000,
+  "h": 1000,
+  "color": "#f8f8e8"
+ },
+ "social-creatives/posts-37": {
+  "kind": "image",
+  "src": "media/social-creatives/posts-37.webp",
+  "sm": "media/social-creatives/posts-37-sm.webp",
+  "w": 990,
+  "h": 990,
+  "color": "#f8e8d8"
+ },
+ "social-creatives/posts-38": {
+  "kind": "image",
+  "src": "media/social-creatives/posts-38.webp",
+  "sm": "media/social-creatives/posts-38-sm.webp",
+  "w": 1000,
+  "h": 1000,
+  "color": "#f8d8d8"
+ },
+ "social-creatives/posts-39": {
+  "kind": "image",
+  "src": "media/social-creatives/posts-39.webp",
+  "sm": "media/social-creatives/posts-39-sm.webp",
+  "w": 990,
+  "h": 990,
+  "color": "#f8f8f8"
+ },
+ "social-creatives/posts-40": {
+  "kind": "image",
+  "src": "media/social-creatives/posts-40.webp",
+  "sm": "media/social-creatives/posts-40-sm.webp",
+  "w": 1000,
+  "h": 1000,
+  "color": "#f8e8d8"
+ },
+ "social-creatives/posts-41": {
+  "kind": "image",
+  "src": "media/social-creatives/posts-41.webp",
+  "sm": "media/social-creatives/posts-41-sm.webp",
+  "w": 1000,
+  "h": 1000,
+  "color": "#f8d8d8"
+ },
+ "social-creatives/posts-42": {
+  "kind": "image",
+  "src": "media/social-creatives/posts-42.webp",
+  "sm": "media/social-creatives/posts-42-sm.webp",
+  "w": 990,
+  "h": 990,
+  "color": "#f8f8f8"
+ },
+ "social-creatives/posts-43": {
+  "kind": "image",
+  "src": "media/social-creatives/posts-43.webp",
+  "sm": "media/social-creatives/posts-43-sm.webp",
+  "w": 1000,
+  "h": 1000,
+  "color": "#f8e8d8"
+ },
+ "social-creatives/posts-44": {
+  "kind": "image",
+  "src": "media/social-creatives/posts-44.webp",
+  "sm": "media/social-creatives/posts-44-sm.webp",
+  "w": 1000,
+  "h": 1000,
+  "color": "#f8e8d8"
+ },
+ "the-ayurveda-co/campaigns-01": {
+  "kind": "image",
+  "src": "media/the-ayurveda-co/campaigns-01.webp",
+  "sm": "media/the-ayurveda-co/campaigns-01-sm.webp",
+  "w": 1800,
+  "h": 600,
+  "color": "#d8d8e8"
+ },
+ "the-ayurveda-co/campaigns-02": {
+  "kind": "image",
+  "src": "media/the-ayurveda-co/campaigns-02.webp",
+  "sm": "media/the-ayurveda-co/campaigns-02-sm.webp",
+  "w": 3543,
+  "h": 1181,
+  "color": "#d8d8d8"
+ },
+ "the-ayurveda-co/campaigns-03": {
+  "kind": "image",
+  "src": "media/the-ayurveda-co/campaigns-03.webp",
+  "sm": "media/the-ayurveda-co/campaigns-03-sm.webp",
+  "w": 1800,
+  "h": 600,
+  "color": "#f8e8e8"
+ },
+ "the-ayurveda-co/campaigns-04": {
+  "kind": "image",
+  "src": "media/the-ayurveda-co/campaigns-04.webp",
+  "sm": "media/the-ayurveda-co/campaigns-04-sm.webp",
+  "w": 2048,
+  "h": 2048,
+  "color": "#a8c8b8"
+ },
+ "the-ayurveda-co/campaigns-05": {
+  "kind": "image",
+  "src": "media/the-ayurveda-co/campaigns-05.webp",
+  "sm": "media/the-ayurveda-co/campaigns-05-sm.webp",
+  "w": 1800,
+  "h": 800,
+  "color": "#f8e898"
+ },
+ "the-ayurveda-co/campaigns-06": {
+  "kind": "image",
+  "src": "media/the-ayurveda-co/campaigns-06.webp",
+  "sm": "media/the-ayurveda-co/campaigns-06-sm.webp",
+  "w": 1800,
+  "h": 800,
+  "color": "#f8a8b8"
+ },
+ "the-ayurveda-co/campaigns-07": {
+  "kind": "image",
+  "src": "media/the-ayurveda-co/campaigns-07.webp",
+  "sm": "media/the-ayurveda-co/campaigns-07-sm.webp",
+  "w": 1080,
+  "h": 1080,
+  "color": "#f8f8f8"
+ },
+ "the-ayurveda-co/campaigns-08": {
+  "kind": "image",
+  "src": "media/the-ayurveda-co/campaigns-08.webp",
+  "sm": "media/the-ayurveda-co/campaigns-08-sm.webp",
+  "w": 540,
+  "h": 540,
+  "color": "#f8f8f8"
+ },
+ "the-ayurveda-co/campaigns-09": {
+  "kind": "image",
+  "src": "media/the-ayurveda-co/campaigns-09.webp",
+  "sm": "media/the-ayurveda-co/campaigns-09-sm.webp",
+  "w": 1080,
+  "h": 1080,
+  "color": "#e8d8a8"
+ },
+ "the-ayurveda-co/campaigns-10": {
+  "kind": "image",
+  "src": "media/the-ayurveda-co/campaigns-10.webp",
+  "sm": "media/the-ayurveda-co/campaigns-10-sm.webp",
+  "w": 700,
+  "h": 1123,
+  "color": "#e8e8e8"
+ },
+ "the-ayurveda-co/campaigns-11": {
+  "kind": "image",
+  "src": "media/the-ayurveda-co/campaigns-11.webp",
+  "sm": "media/the-ayurveda-co/campaigns-11-sm.webp",
+  "w": 2048,
+  "h": 2048,
+  "color": "#f89828"
+ },
+ "the-ayurveda-co/campaigns-12": {
+  "kind": "image",
+  "src": "media/the-ayurveda-co/campaigns-12.webp",
+  "sm": "media/the-ayurveda-co/campaigns-12-sm.webp",
+  "w": 2048,
+  "h": 2048,
+  "color": "#f8f8f8"
+ },
+ "the-ayurveda-co/campaigns-13": {
+  "kind": "image",
+  "src": "media/the-ayurveda-co/campaigns-13.webp",
+  "sm": "media/the-ayurveda-co/campaigns-13-sm.webp",
+  "w": 2048,
+  "h": 2048,
+  "color": "#e8b808"
+ },
+ "the-ayurveda-co/campaigns-14": {
+  "kind": "image",
+  "src": "media/the-ayurveda-co/campaigns-14.webp",
+  "sm": "media/the-ayurveda-co/campaigns-14-sm.webp",
+  "w": 700,
+  "h": 1070,
+  "color": "#880868"
+ },
+ "the-ayurveda-co/campaigns-15": {
+  "kind": "image",
+  "src": "media/the-ayurveda-co/campaigns-15.webp",
+  "sm": "media/the-ayurveda-co/campaigns-15-sm.webp",
+  "w": 1080,
+  "h": 2085,
+  "color": "#e8e8e8"
+ },
+ "the-ayurveda-co/campaigns-16": {
+  "kind": "image",
+  "src": "media/the-ayurveda-co/campaigns-16.webp",
+  "sm": "media/the-ayurveda-co/campaigns-16-sm.webp",
+  "w": 700,
+  "h": 797,
+  "color": "#e8e8e8"
+ },
+ "the-ayurveda-co/campaigns-17": {
+  "kind": "image",
+  "src": "media/the-ayurveda-co/campaigns-17.webp",
+  "sm": "media/the-ayurveda-co/campaigns-17-sm.webp",
+  "w": 700,
+  "h": 1166,
+  "color": "#f8f8f8"
+ },
+ "the-ayurveda-co/campaigns-18": {
+  "kind": "image",
+  "src": "media/the-ayurveda-co/campaigns-18.webp",
+  "sm": "media/the-ayurveda-co/campaigns-18-sm.webp",
+  "w": 2048,
+  "h": 2048,
+  "color": "#f8d8d8"
+ },
+ "the-ayurveda-co/campaigns-19": {
+  "kind": "image",
+  "src": "media/the-ayurveda-co/campaigns-19.webp",
+  "sm": "media/the-ayurveda-co/campaigns-19-sm.webp",
+  "w": 700,
+  "h": 1443,
+  "color": "#f8f8f8"
+ },
+ "the-ayurveda-co/campaigns-20": {
+  "kind": "image",
+  "src": "media/the-ayurveda-co/campaigns-20.webp",
+  "sm": "media/the-ayurveda-co/campaigns-20-sm.webp",
+  "w": 700,
+  "h": 1107,
+  "color": "#e8e8e8"
+ },
+ "the-ayurveda-co/campaigns-21": {
+  "kind": "image",
+  "src": "media/the-ayurveda-co/campaigns-21.webp",
+  "sm": "media/the-ayurveda-co/campaigns-21-sm.webp",
+  "w": 2048,
+  "h": 2048,
+  "color": "#e8d8d8"
+ },
+ "the-ayurveda-co/campaigns-22": {
+  "kind": "image",
+  "src": "media/the-ayurveda-co/campaigns-22.webp",
+  "sm": "media/the-ayurveda-co/campaigns-22-sm.webp",
+  "w": 3000,
+  "h": 3000,
+  "color": "#e89828"
+ },
+ "the-ayurveda-co/campaigns-23": {
+  "kind": "image",
+  "src": "media/the-ayurveda-co/campaigns-23.webp",
+  "sm": "media/the-ayurveda-co/campaigns-23-sm.webp",
+  "w": 1181,
+  "h": 1181,
+  "color": "#d8d8d8"
+ },
+ "the-ayurveda-co/campaigns-24": {
+  "kind": "image",
+  "src": "media/the-ayurveda-co/campaigns-24.webp",
+  "sm": "media/the-ayurveda-co/campaigns-24-sm.webp",
+  "w": 2048,
+  "h": 2048,
+  "color": "#f8a858"
+ },
+ "the-ayurveda-co/campaigns-25": {
+  "kind": "image",
+  "src": "media/the-ayurveda-co/campaigns-25.webp",
+  "sm": "media/the-ayurveda-co/campaigns-25-sm.webp",
+  "w": 3000,
+  "h": 1000,
+  "color": "#f8f8f8"
+ },
+ "the-ayurveda-co/campaigns-26": {
+  "kind": "image",
+  "src": "media/the-ayurveda-co/campaigns-26.webp",
+  "sm": "media/the-ayurveda-co/campaigns-26-sm.webp",
+  "w": 2048,
+  "h": 2048,
+  "color": "#d8d8c8"
+ },
+ "the-ayurveda-co/campaigns-27": {
+  "kind": "image",
+  "src": "media/the-ayurveda-co/campaigns-27.webp",
+  "sm": "media/the-ayurveda-co/campaigns-27-sm.webp",
+  "w": 2048,
+  "h": 2048,
+  "color": "#e8e8d8"
+ },
+ "the-ayurveda-co/campaigns-28": {
+  "kind": "image",
+  "src": "media/the-ayurveda-co/campaigns-28.webp",
+  "sm": "media/the-ayurveda-co/campaigns-28-sm.webp",
+  "w": 2048,
+  "h": 2048,
+  "color": "#885838"
+ },
+ "the-ayurveda-co/campaigns-29": {
+  "kind": "image",
+  "src": "media/the-ayurveda-co/campaigns-29.webp",
+  "sm": "media/the-ayurveda-co/campaigns-29-sm.webp",
+  "w": 2048,
+  "h": 2048,
+  "color": "#582848"
+ },
+ "the-ayurveda-co/campaigns-30": {
+  "kind": "image",
+  "src": "media/the-ayurveda-co/campaigns-30.webp",
+  "sm": "media/the-ayurveda-co/campaigns-30-sm.webp",
+  "w": 2048,
+  "h": 2048,
+  "color": "#885838"
+ },
+ "the-ayurveda-co/campaigns-31": {
+  "kind": "image",
+  "src": "media/the-ayurveda-co/campaigns-31.webp",
+  "sm": "media/the-ayurveda-co/campaigns-31-sm.webp",
+  "w": 2048,
+  "h": 2048,
+  "color": "#885838"
+ },
+ "the-ayurveda-co/campaigns-32": {
+  "kind": "image",
+  "src": "media/the-ayurveda-co/campaigns-32.webp",
+  "sm": "media/the-ayurveda-co/campaigns-32-sm.webp",
+  "w": 2048,
+  "h": 2048,
+  "color": "#b89888"
+ },
+ "the-ayurveda-co/campaigns-33": {
+  "kind": "image",
+  "src": "media/the-ayurveda-co/campaigns-33.webp",
+  "sm": "media/the-ayurveda-co/campaigns-33-sm.webp",
+  "w": 2160,
+  "h": 4475,
+  "color": "#c89848"
+ },
+ "the-ayurveda-co/campaigns-34": {
+  "kind": "image",
+  "src": "media/the-ayurveda-co/campaigns-34.webp",
+  "sm": "media/the-ayurveda-co/campaigns-34-sm.webp",
+  "w": 9000,
+  "h": 3000,
+  "color": "#e8e8e8"
+ },
+ "the-ayurveda-co/campaigns-35": {
+  "kind": "image",
+  "src": "media/the-ayurveda-co/campaigns-35.webp",
+  "sm": "media/the-ayurveda-co/campaigns-35-sm.webp",
+  "w": 2048,
+  "h": 2048,
+  "color": "#d8e8e8"
+ },
+ "the-ayurveda-co/campaigns-36": {
+  "kind": "image",
+  "src": "media/the-ayurveda-co/campaigns-36.webp",
+  "sm": "media/the-ayurveda-co/campaigns-36-sm.webp",
+  "w": 1080,
+  "h": 1080,
+  "color": "#f8c878"
+ },
+ "the-ayurveda-co/campaigns-37": {
+  "kind": "image",
+  "src": "media/the-ayurveda-co/campaigns-37.webp",
+  "sm": "media/the-ayurveda-co/campaigns-37-sm.webp",
+  "w": 1080,
+  "h": 1080,
+  "color": "#a8b8b8"
+ },
+ "the-ayurveda-co/campaigns-38": {
+  "kind": "image",
+  "src": "media/the-ayurveda-co/campaigns-38.webp",
+  "sm": "media/the-ayurveda-co/campaigns-38-sm.webp",
+  "w": 2048,
+  "h": 2048,
+  "color": "#f8f8d8"
+ },
+ "the-ayurveda-co/mark-01": {
+  "kind": "image",
+  "src": "media/the-ayurveda-co/mark-01.webp",
+  "sm": "media/the-ayurveda-co/mark-01-sm.webp",
+  "w": 2000,
+  "h": 968,
+  "color": "#f8f8f8"
+ },
+ "the-ayurveda-co/packaging-01": {
+  "kind": "image",
+  "src": "media/the-ayurveda-co/packaging-01.webp",
+  "sm": "media/the-ayurveda-co/packaging-01-sm.webp",
+  "w": 1280,
+  "h": 853,
+  "color": "#681828"
+ },
+ "the-ayurveda-co/packaging-02": {
+  "kind": "image",
+  "src": "media/the-ayurveda-co/packaging-02.webp",
+  "sm": "media/the-ayurveda-co/packaging-02-sm.webp",
+  "w": 1280,
+  "h": 853,
+  "color": "#881828"
+ },
+ "the-ayurveda-co/packaging-03": {
+  "kind": "image",
+  "src": "media/the-ayurveda-co/packaging-03.webp",
+  "sm": "media/the-ayurveda-co/packaging-03-sm.webp",
+  "w": 1280,
+  "h": 853,
+  "color": "#681828"
+ },
+ "the-ayurveda-co/packaging-04": {
+  "kind": "image",
+  "src": "media/the-ayurveda-co/packaging-04.webp",
+  "sm": "media/the-ayurveda-co/packaging-04-sm.webp",
+  "w": 702,
+  "h": 711,
+  "color": "#f8f8d8"
+ },
+ "the-ayurveda-co/packaging-05": {
+  "kind": "image",
+  "src": "media/the-ayurveda-co/packaging-05.webp",
+  "sm": "media/the-ayurveda-co/packaging-05-sm.webp",
+  "w": 1280,
+  "h": 853,
+  "color": "#f8f8f8"
+ },
+ "the-ayurveda-co/packaging-06": {
+  "kind": "image",
+  "src": "media/the-ayurveda-co/packaging-06.webp",
+  "sm": "media/the-ayurveda-co/packaging-06-sm.webp",
+  "w": 5000,
+  "h": 5000,
+  "color": "#f8f8f8"
+ },
+ "the-ayurveda-co/packaging-07": {
+  "kind": "image",
+  "src": "media/the-ayurveda-co/packaging-07.webp",
+  "sm": "media/the-ayurveda-co/packaging-07-sm.webp",
+  "w": 5000,
+  "h": 5000,
+  "color": "#f8f8f8"
+ },
+ "the-ayurveda-co/packaging-08": {
+  "kind": "image",
+  "src": "media/the-ayurveda-co/packaging-08.webp",
+  "sm": "media/the-ayurveda-co/packaging-08-sm.webp",
+  "w": 5000,
+  "h": 5000,
+  "color": "#f8f8f8"
+ },
+ "the-ayurveda-co/packaging-09": {
+  "kind": "image",
+  "src": "media/the-ayurveda-co/packaging-09.webp",
+  "sm": "media/the-ayurveda-co/packaging-09-sm.webp",
+  "w": 3000,
+  "h": 3000,
+  "color": "#f8f8f8"
+ },
+ "the-ayurveda-co/packaging-10": {
+  "kind": "image",
+  "src": "media/the-ayurveda-co/packaging-10.webp",
+  "sm": "media/the-ayurveda-co/packaging-10-sm.webp",
+  "w": 3000,
+  "h": 3000,
+  "color": "#486848"
+ },
+ "the-ayurveda-co/packaging-11": {
+  "kind": "image",
+  "src": "media/the-ayurveda-co/packaging-11.webp",
+  "sm": "media/the-ayurveda-co/packaging-11-sm.webp",
+  "w": 3000,
+  "h": 3000,
+  "color": "#486848"
+ },
+ "the-ayurveda-co/packaging-12": {
+  "kind": "image",
+  "src": "media/the-ayurveda-co/packaging-12.webp",
+  "sm": "media/the-ayurveda-co/packaging-12-sm.webp",
+  "w": 3000,
+  "h": 3000,
+  "color": "#486848"
+ },
+ "the-ayurveda-co/packaging-13": {
+  "kind": "image",
+  "src": "media/the-ayurveda-co/packaging-13.webp",
+  "sm": "media/the-ayurveda-co/packaging-13-sm.webp",
+  "w": 1000,
+  "h": 750,
+  "color": "#f8f8f8"
+ },
+ "the-ayurveda-co/packaging-14": {
+  "kind": "image",
+  "src": "media/the-ayurveda-co/packaging-14.webp",
+  "sm": "media/the-ayurveda-co/packaging-14-sm.webp",
+  "w": 1000,
+  "h": 750,
+  "color": "#f8f8f8"
+ },
+ "the-ayurveda-co/packaging-15": {
+  "kind": "image",
+  "src": "media/the-ayurveda-co/packaging-15.webp",
+  "sm": "media/the-ayurveda-co/packaging-15-sm.webp",
+  "w": 1000,
+  "h": 750,
+  "color": "#f8f8f8"
+ },
+ "the-ayurveda-co/packaging-16": {
+  "kind": "image",
+  "src": "media/the-ayurveda-co/packaging-16.webp",
+  "sm": "media/the-ayurveda-co/packaging-16-sm.webp",
+  "w": 1000,
+  "h": 952,
+  "color": "#f8f8f8"
+ },
+ "the-ayurveda-co/packaging-17": {
+  "kind": "image",
+  "src": "media/the-ayurveda-co/packaging-17.webp",
+  "sm": "media/the-ayurveda-co/packaging-17-sm.webp",
+  "w": 1000,
+  "h": 1000,
+  "color": "#f8f8f8"
+ },
+ "the-ayurveda-co/packaging-18": {
+  "kind": "image",
+  "src": "media/the-ayurveda-co/packaging-18.webp",
+  "sm": "media/the-ayurveda-co/packaging-18-sm.webp",
+  "w": 1000,
+  "h": 1000,
+  "color": "#f8f8f8"
+ },
+ "the-ayurveda-co/packaging-19": {
+  "kind": "image",
+  "src": "media/the-ayurveda-co/packaging-19.webp",
+  "sm": "media/the-ayurveda-co/packaging-19-sm.webp",
+  "w": 1000,
+  "h": 1000,
+  "color": "#f8f8f8"
+ },
+ "the-ayurveda-co/packaging-20": {
+  "kind": "image",
+  "src": "media/the-ayurveda-co/packaging-20.webp",
+  "sm": "media/the-ayurveda-co/packaging-20-sm.webp",
+  "w": 1000,
+  "h": 1000,
+  "color": "#f8f8f8"
+ },
+ "the-ayurveda-co/packaging-21": {
+  "kind": "image",
+  "src": "media/the-ayurveda-co/packaging-21.webp",
+  "sm": "media/the-ayurveda-co/packaging-21-sm.webp",
+  "w": 1000,
+  "h": 1000,
+  "color": "#f8f8f8"
+ },
+ "the-ayurveda-co/packaging-22": {
+  "kind": "image",
+  "src": "media/the-ayurveda-co/packaging-22.webp",
+  "sm": "media/the-ayurveda-co/packaging-22-sm.webp",
+  "w": 1000,
+  "h": 1000,
+  "color": "#f8f8f8"
+ },
+ "the-ayurveda-co/packaging-23": {
+  "kind": "image",
+  "src": "media/the-ayurveda-co/packaging-23.webp",
+  "sm": "media/the-ayurveda-co/packaging-23-sm.webp",
+  "w": 1000,
+  "h": 1000,
+  "color": "#f8f8f8"
+ },
+ "the-ayurveda-co/packaging-24": {
+  "kind": "image",
+  "src": "media/the-ayurveda-co/packaging-24.webp",
+  "sm": "media/the-ayurveda-co/packaging-24-sm.webp",
+  "w": 1000,
+  "h": 1000,
+  "color": "#f8f8f8"
+ },
+ "the-ayurveda-co/packaging-25": {
+  "kind": "image",
+  "src": "media/the-ayurveda-co/packaging-25.webp",
+  "sm": "media/the-ayurveda-co/packaging-25-sm.webp",
+  "w": 1000,
+  "h": 1000,
+  "color": "#f8f8f8"
+ },
+ "the-ayurveda-co/packaging-26": {
+  "kind": "image",
+  "src": "media/the-ayurveda-co/packaging-26.webp",
+  "sm": "media/the-ayurveda-co/packaging-26-sm.webp",
+  "w": 1000,
+  "h": 1000,
+  "color": "#f8f8f8"
+ },
+ "the-ayurveda-co/packaging-27": {
+  "kind": "image",
+  "src": "media/the-ayurveda-co/packaging-27.webp",
+  "sm": "media/the-ayurveda-co/packaging-27-sm.webp",
+  "w": 1000,
+  "h": 1000,
+  "color": "#f8f8f8"
+ },
+ "the-ayurveda-co/packaging-28": {
+  "kind": "image",
+  "src": "media/the-ayurveda-co/packaging-28.webp",
+  "sm": "media/the-ayurveda-co/packaging-28-sm.webp",
+  "w": 1000,
+  "h": 1000,
+  "color": "#f8f8f8"
+ },
+ "the-ayurveda-co/packaging-29": {
+  "kind": "image",
+  "src": "media/the-ayurveda-co/packaging-29.webp",
+  "sm": "media/the-ayurveda-co/packaging-29-sm.webp",
+  "w": 1000,
+  "h": 1000,
+  "color": "#f8f8f8"
+ },
+ "the-ayurveda-co/packaging-30": {
+  "kind": "image",
+  "src": "media/the-ayurveda-co/packaging-30.webp",
+  "sm": "media/the-ayurveda-co/packaging-30-sm.webp",
+  "w": 1000,
+  "h": 1000,
+  "color": "#f8f8f8"
+ },
+ "the-ayurveda-co/packaging-31": {
+  "kind": "image",
+  "src": "media/the-ayurveda-co/packaging-31.webp",
+  "sm": "media/the-ayurveda-co/packaging-31-sm.webp",
+  "w": 1000,
+  "h": 1000,
+  "color": "#f8f8f8"
+ },
+ "the-ayurveda-co/packaging-32": {
+  "kind": "image",
+  "src": "media/the-ayurveda-co/packaging-32.webp",
+  "sm": "media/the-ayurveda-co/packaging-32-sm.webp",
+  "w": 1000,
+  "h": 1000,
+  "color": "#f8f8f8"
+ },
+ "the-ayurveda-co/packaging-33": {
+  "kind": "image",
+  "src": "media/the-ayurveda-co/packaging-33.webp",
+  "sm": "media/the-ayurveda-co/packaging-33-sm.webp",
+  "w": 1000,
+  "h": 1000,
+  "color": "#f8f8f8"
+ },
+ "the-ayurveda-co/packaging-34": {
+  "kind": "image",
+  "src": "media/the-ayurveda-co/packaging-34.webp",
+  "sm": "media/the-ayurveda-co/packaging-34-sm.webp",
+  "w": 1000,
+  "h": 1000,
+  "color": "#f8f8f8"
+ },
+ "the-ayurveda-co/packaging-35": {
+  "kind": "image",
+  "src": "media/the-ayurveda-co/packaging-35.webp",
+  "sm": "media/the-ayurveda-co/packaging-35-sm.webp",
+  "w": 1000,
+  "h": 1000,
+  "color": "#f8f8f8"
+ },
+ "the-ayurveda-co/packaging-36": {
+  "kind": "image",
+  "src": "media/the-ayurveda-co/packaging-36.webp",
+  "sm": "media/the-ayurveda-co/packaging-36-sm.webp",
+  "w": 1000,
+  "h": 1000,
+  "color": "#f8f8f8"
+ },
+ "the-ayurveda-co/print-01": {
+  "kind": "image",
+  "src": "media/the-ayurveda-co/print-01.webp",
+  "sm": "media/the-ayurveda-co/print-01-sm.webp",
+  "w": 986,
+  "h": 558,
+  "color": "#385848"
+ },
+ "the-ayurveda-co/print-02": {
+  "kind": "image",
+  "src": "media/the-ayurveda-co/print-02.webp",
+  "sm": "media/the-ayurveda-co/print-02-sm.webp",
+  "w": 993,
+  "h": 561,
+  "color": "#385848"
+ },
+ "the-ayurveda-co/print-03": {
+  "kind": "image",
+  "src": "media/the-ayurveda-co/print-03.webp",
+  "sm": "media/the-ayurveda-co/print-03-sm.webp",
+  "w": 2513,
+  "h": 3508,
+  "color": "#f8f8e8"
+ },
+ "the-ayurveda-co/print-04": {
+  "kind": "image",
+  "src": "media/the-ayurveda-co/print-04.webp",
+  "sm": "media/the-ayurveda-co/print-04-sm.webp",
+  "w": 2466,
+  "h": 3508,
+  "color": "#f8f8f8"
+ },
+ "the-ayurveda-co/print-05": {
+  "kind": "image",
+  "src": "media/the-ayurveda-co/print-05.webp",
+  "sm": "media/the-ayurveda-co/print-05-sm.webp",
+  "w": 2451,
+  "h": 3508,
+  "color": "#f8f8f8"
+ },
+ "the-ayurveda-co/print-06": {
+  "kind": "image",
+  "src": "media/the-ayurveda-co/print-06.webp",
+  "sm": "media/the-ayurveda-co/print-06-sm.webp",
+  "w": 2459,
+  "h": 3508,
+  "color": "#f8f8f8"
+ },
+ "the-ayurveda-co/print-07": {
+  "kind": "image",
+  "src": "media/the-ayurveda-co/print-07.webp",
+  "sm": "media/the-ayurveda-co/print-07-sm.webp",
+  "w": 2479,
+  "h": 3508,
+  "color": "#f8f8f8"
+ },
+ "the-ayurveda-co/print-08": {
+  "kind": "image",
+  "src": "media/the-ayurveda-co/print-08.webp",
+  "sm": "media/the-ayurveda-co/print-08-sm.webp",
+  "w": 2469,
+  "h": 3508,
+  "color": "#f8f8f8"
+ },
+ "web-banners/banners-01": {
+  "kind": "image",
+  "src": "media/web-banners/banners-01.webp",
+  "sm": "media/web-banners/banners-01-sm.webp",
+  "w": 1000,
+  "h": 332,
+  "color": "#f8f8f8"
+ },
+ "web-banners/banners-02": {
+  "kind": "image",
+  "src": "media/web-banners/banners-02.webp",
+  "sm": "media/web-banners/banners-02-sm.webp",
+  "w": 1000,
+  "h": 334,
+  "color": "#e8e8d8"
+ },
+ "web-banners/banners-03": {
+  "kind": "image",
+  "src": "media/web-banners/banners-03.webp",
+  "sm": "media/web-banners/banners-03-sm.webp",
+  "w": 1000,
+  "h": 333,
+  "color": "#f89838"
+ },
+ "web-banners/banners-04": {
+  "kind": "image",
+  "src": "media/web-banners/banners-04.webp",
+  "sm": "media/web-banners/banners-04-sm.webp",
+  "w": 2000,
+  "h": 1000,
+  "color": "#f8f8f8"
+ },
+ "web-banners/banners-05": {
+  "kind": "image",
+  "src": "media/web-banners/banners-05.webp",
+  "sm": "media/web-banners/banners-05-sm.webp",
+  "w": 2000,
+  "h": 1000,
+  "color": "#f8f8e8"
+ },
+ "web-banners/banners-06": {
+  "kind": "image",
+  "src": "media/web-banners/banners-06.webp",
+  "sm": "media/web-banners/banners-06-sm.webp",
+  "w": 1000,
+  "h": 334,
+  "color": "#e8e8e8"
+ },
+ "web-banners/banners-07": {
+  "kind": "image",
+  "src": "media/web-banners/banners-07.webp",
+  "sm": "media/web-banners/banners-07-sm.webp",
+  "w": 2160,
+  "h": 1080,
+  "color": "#280808"
+ },
+ "web-banners/banners-08": {
+  "kind": "image",
+  "src": "media/web-banners/banners-08.webp",
+  "sm": "media/web-banners/banners-08-sm.webp",
+  "w": 1000,
+  "h": 334,
+  "color": "#d8d8e8"
+ },
+ "web-banners/banners-09": {
+  "kind": "image",
+  "src": "media/web-banners/banners-09.webp",
+  "sm": "media/web-banners/banners-09-sm.webp",
+  "w": 1000,
+  "h": 334,
+  "color": "#f8f8f8"
+ },
+ "web-banners/banners-10": {
+  "kind": "image",
+  "src": "media/web-banners/banners-10.webp",
+  "sm": "media/web-banners/banners-10-sm.webp",
+  "w": 1000,
+  "h": 444,
+  "color": "#f8e898"
+ },
+ "web-banners/banners-11": {
+  "kind": "image",
+  "src": "media/web-banners/banners-11.webp",
+  "sm": "media/web-banners/banners-11-sm.webp",
+  "w": 1000,
+  "h": 312,
+  "color": "#f8f8f8"
+ },
+ "web-banners/banners-12": {
+  "kind": "image",
+  "src": "media/web-banners/banners-12.webp",
+  "sm": "media/web-banners/banners-12-sm.webp",
+  "w": 2000,
+  "h": 1000,
+  "color": "#d8d8c8"
+ },
+ "web-banners/banners-13": {
+  "kind": "image",
+  "src": "media/web-banners/banners-13.webp",
+  "sm": "media/web-banners/banners-13-sm.webp",
+  "w": 1000,
+  "h": 312,
+  "color": "#f8f8f8"
+ },
+ "web-banners/banners-14": {
+  "kind": "image",
+  "src": "media/web-banners/banners-14.webp",
+  "sm": "media/web-banners/banners-14-sm.webp",
+  "w": 1000,
+  "h": 334,
+  "color": "#f8e8d8"
+ },
+ "web-banners/banners-15": {
+  "kind": "image",
+  "src": "media/web-banners/banners-15.webp",
+  "sm": "media/web-banners/banners-15-sm.webp",
+  "w": 1000,
+  "h": 334,
+  "color": "#f8f8f8"
+ },
+ "web-banners/banners-16": {
+  "kind": "image",
+  "src": "media/web-banners/banners-16.webp",
+  "sm": "media/web-banners/banners-16-sm.webp",
+  "w": 1000,
+  "h": 444,
+  "color": "#f8a8b8"
+ },
+ "web-banners/banners-17": {
+  "kind": "image",
+  "src": "media/web-banners/banners-17.webp",
+  "sm": "media/web-banners/banners-17-sm.webp",
+  "w": 1000,
+  "h": 334,
+  "color": "#d8d8d8"
+ },
+ "web-banners/banners-18": {
+  "kind": "image",
+  "src": "media/web-banners/banners-18.webp",
+  "sm": "media/web-banners/banners-18-sm.webp",
+  "w": 1000,
+  "h": 332,
+  "color": "#a8a898"
+ },
+ "web-banners/banners-19": {
+  "kind": "image",
+  "src": "media/web-banners/banners-19.webp",
+  "sm": "media/web-banners/banners-19-sm.webp",
+  "w": 1000,
+  "h": 334,
+  "color": "#f8e8d8"
+ },
+ "web-banners/banners-20": {
+  "kind": "image",
+  "src": "media/web-banners/banners-20.webp",
+  "sm": "media/web-banners/banners-20-sm.webp",
+  "w": 1000,
+  "h": 334,
+  "color": "#283848"
+ },
+ "web-banners/banners-21": {
+  "kind": "image",
+  "src": "media/web-banners/banners-21.webp",
+  "sm": "media/web-banners/banners-21-sm.webp",
+  "w": 990,
+  "h": 440,
+  "color": "#f8f8f8"
+ },
+ "web-banners/banners-22": {
+  "kind": "image",
+  "src": "media/web-banners/banners-22.webp",
+  "sm": "media/web-banners/banners-22-sm.webp",
+  "w": 990,
+  "h": 440,
+  "color": "#f8e8d8"
+ },
+ "web-banners/banners-23": {
+  "kind": "image",
+  "src": "media/web-banners/banners-23.webp",
+  "sm": "media/web-banners/banners-23-sm.webp",
+  "w": 1000,
+  "h": 334,
+  "color": "#f8e8e8"
+ },
+ "web-banners/banners-24": {
+  "kind": "image",
+  "src": "media/web-banners/banners-24.webp",
+  "sm": "media/web-banners/banners-24-sm.webp",
+  "w": 990,
+  "h": 330,
+  "color": "#e8e8e8"
+ }
+}
