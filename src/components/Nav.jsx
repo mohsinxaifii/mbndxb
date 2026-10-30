@@ -2,7 +2,6 @@ import { useEffect, useRef } from 'react'
 import { useLocation } from 'react-router-dom'
 import { TLink } from '../lib/transition.jsx'
 import { lenis } from '../lib/smooth.js'
-import Clock from './Clock.jsx'
 import Logo from './Logo.jsx'
 
 const links = [
@@ -43,7 +42,6 @@ export default function Nav() {
           </TLink>
         ))}
       </nav>
-      <Clock />
     </header>
   )
 }

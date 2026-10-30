@@ -1,51 +1,174 @@
-/* ---------- Hero: drifting rows of work ---------- */
+/* ---------- Hero ---------- */
 
 .hero {
+  position: relative;
   min-height: 100svh;
   display: grid;
-  grid-template-rows: 1fr auto;
-  gap: 3vh;
-  padding: calc(var(--nav-h) + 2vh) 0 var(--gutter);
+  grid-template-columns: minmax(0, 1fr) minmax(0, 34ch);
+  grid-template-rows: auto auto auto 1fr;
+  column-gap: 5vw;
+  padding: calc(var(--nav-h) + 3vh) var(--gutter) 0;
 }
-.hero__rows { display: grid; align-content: center; gap: 1.2vw; }
+.hero__bar { grid-column: 1 / -1; display: flex; justify-content: space-between; align-items: center; gap: 16px; }
+.hero__place { display: inline-flex; align-items: center; gap: 10px; font-size: 15px; font-weight: 500; }
+.hero__place .flag { width: 30px; height: 15px; }
+.hero__since { color: var(--mute); }
 
-.drift { overflow-x: clip; overflow-y: visible; padding: 8px 0; }
-.drift__track { display: flex; gap: 1.2vw; width: max-content; will-change: transform; }
-.drift__item {
-  display: block;
-  height: clamp(100px, 18vh, 220px);
-  flex: none;
-  transition: transform 0.6s var(--ease), box-shadow 0.6s var(--ease);
-}
-.drift__item img { width: 100%; height: 100%; object-fit: contain; }
-.drift__item:hover { transform: translateY(-6px) rotate(-1deg); box-shadow: 0 20px 40px -24px rgba(18, 17, 16, 0.5); z-index: 1; }
-
-.hero__foot {
-  display: flex;
-  justify-content: space-between;
-  align-items: end;
-  gap: 4vw;
-  padding: 0 var(--gutter);
-}
-.hero__line {
-  font-size: clamp(34px, 4.6vw, 90px);
+.hero__head {
+  grid-column: 1 / -1;
+  margin-top: 6vh;
+  font-size: clamp(46px, 7.4vw, 150px);
   font-weight: 700;
   line-height: 0.98;
-  letter-spacing: -0.045em;
-  max-width: 16ch;
+  letter-spacing: -0.05em;
+  max-width: 13ch;
 }
-.hero__meta { display: grid; gap: 6px; text-align: right; color: var(--mute); padding-bottom: 0.6em; }
+.verb { display: inline-block; }
+
+/* look: the o's are eyes */
+.eye {
+  position: relative;
+  display: inline-block;
+  width: 0.5em;
+  height: 0.52em;
+  margin: 0 0.01em;
+  border: 0.085em solid currentColor;
+  border-radius: 50%;
+  vertical-align: baseline;
+}
+.eye i {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 0.15em;
+  height: 0.15em;
+  margin: -0.075em 0 0 -0.075em;
+  border-radius: 50%;
+  background: currentColor;
+  transition: transform 0.25s var(--ease);
+}
+
+/* sell: a hand-drawn underline */
+.sell { position: relative; color: var(--accent); }
+.sell__line {
+  position: absolute;
+  left: -2%;
+  bottom: -0.12em;
+  width: 104%;
+  height: 0.2em;
+  overflow: visible;
+}
+.sell__line path { fill: none; stroke: currentColor; stroke-width: 2.4; stroke-linecap: round; stroke-dasharray: 1; stroke-dashoffset: 0; }
+
+/* move: letters sway */
+.move .ch { transform-origin: 50% 90%; }
+
+.hero__intro {
+  grid-column: 2;
+  margin-top: 4vh;
+  font-size: 17px;
+  line-height: 1.5;
+  color: var(--fg);
+}
+
+/* ---------- Playground: the types of work as pills ---------- */
+
+.pg {
+  position: relative;
+  grid-column: 1 / -1;
+  min-height: 34vh;
+  margin: 3vh calc(var(--gutter) * -1) 0;
+  overflow: hidden;
+  border-top: 1px solid var(--line);
+  touch-action: pan-y;
+}
+.pg__hint { position: absolute; left: var(--gutter); top: 14px; color: var(--mute); pointer-events: none; }
+.pg__pill {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35em;
+  padding: 0.5em 0.95em 0.55em;
+  border-radius: 999px;
+  font-size: clamp(18px, 1.9vw, 34px);
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  line-height: 1;
+  white-space: nowrap;
+  user-select: none;
+  -webkit-user-drag: none;
+  will-change: transform;
+  transform: translate(-200px, -200px);
+}
+.pg__pill span { font-weight: 400; opacity: 0.7; }
+.pg__pill.is-red { background: #ef3340; color: #fff; }
+.pg__pill.is-ink { background: var(--ink); color: var(--paper); }
+.pg__pill.is-green { background: #00732f; color: #fff; }
+.pg__pill.is-white { background: #fff; color: var(--ink); box-shadow: inset 0 0 0 1.5px var(--ink); }
+
+.pg.is-static { display: flex; flex-wrap: wrap; gap: 10px; align-content: center; padding: 40px var(--gutter); }
+.pg.is-static .pg__pill { position: static; transform: none; }
 
 @media (max-width: 800px) {
-  .hero { min-height: auto; padding-top: calc(var(--nav-h) + 4vh); }
-  .drift__item { height: 17vh; }
-  .hero__foot { flex-direction: column; align-items: start; }
-  .hero__meta { text-align: left; }
+  .hero { grid-template-columns: 1fr; }
+  .hero__intro { grid-column: 1; }
+  .hero__head { font-size: 13.5vw; }
+  .pg { min-height: 46vh; }
+}
+
+/* ---------- Floaters & stickers ---------- */
+
+.floater { position: absolute; z-index: 5; pointer-events: none; }
+.floater__inner { pointer-events: auto; cursor: grab; }
+.floater__inner:active { cursor: grabbing; }
+
+.badge { position: relative; width: clamp(130px, 12vw, 210px); aspect-ratio: 1; display: grid; place-items: center; }
+.badge__ring { position: absolute; inset: 0; width: 100%; height: 100%; animation: spin 18s linear infinite; overflow: visible; }
+.badge__ring text { font-family: var(--mono); font-size: 15.5px; letter-spacing: 0.12em; fill: var(--fg); }
+.badge__center {
+  display: grid;
+  place-items: center;
+  width: 46%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: var(--accent);
+  color: #fff;
+  font-weight: 700;
+  font-size: clamp(22px, 2.2vw, 36px);
+  letter-spacing: -0.04em;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+
+.sticker {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  max-width: 19rem;
+  padding: 12px 18px;
+  border-radius: 14px;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+  box-shadow: 0 18px 40px -20px rgba(18, 17, 16, 0.45);
+}
+.sticker--flag { background: #fff; color: var(--ink); }
+.sticker--flag .flag { flex: none; width: 34px; height: 17px; }
+.sticker--ink { background: var(--ink); color: var(--paper); }
+.sticker--red { background: #ef3340; color: #fff; }
+.sticker__icon { flex: none; width: 22px; height: 22px; fill: currentColor; }
+.sticker__car { width: 32px; height: 20px; }
+.flag { display: inline-block; border-radius: 2px; box-shadow: 0 0 0 1px rgba(18, 17, 16, 0.12); }
+
+@media (max-width: 800px) {
+  .floater { display: none; }
 }
 
 /* ---------- Chapters ---------- */
 
-.chap { padding: 20vh 0 0; }
+.chap { position: relative; padding: 20vh 0 0; }
 .chap__head {
   display: grid;
   grid-template-columns: 5rem 1fr auto auto;

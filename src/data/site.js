@@ -3,8 +3,8 @@ export const site = {
   name: 'Mobeen Saifi',
   role: 'Creative Director',
   city: 'Dubai',
-  timezone: 'Asia/Dubai',
-  intro: 'Ten years in design, motion and content creation. A Dubai-based creative director crafting visuals that move people, with creativity, execution and a smart use of AI.',
+  headline: 'I shape how brands look, sell & move.',
+  intro: 'Twelve years of building brands end to end: identities, packaging that earns its shelf space, social and performance campaigns, motion, web, email and print. Based in Dubai, with AI as an everyday tool rather than a trick.',
   email: 'mubeenxaifi@gmail.com',
   phone: '+971 55 780 5809',
   links: [
@@ -14,9 +14,3 @@ export const site = {
     { label: 'Instagram', handle: '@mubeenxaifi', href: 'https://www.instagram.com/mubeenxaifi' },
   ],
 }
-
-// What the work covers, for the running line near the end of the home page.
-export const capabilities = [
-  'Packaging', 'Social media', 'Performance marketing', 'Branding', 'Motion graphics',
-  'Web banners', 'Emailers', 'Print', 'Art direction', 'AI-assisted production',
-]

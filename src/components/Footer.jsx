@@ -4,7 +4,7 @@ import { useGSAP } from '@gsap/react'
 import { site } from '../data/site.js'
 import { reduced, scrollTo, toneTrigger } from '../lib/smooth.js'
 import { Words } from './Split.jsx'
-import Clock from './Clock.jsx'
+import Flag from './Flag.jsx'
 
 export default function Footer() {
   const root = useRef()
@@ -42,7 +42,7 @@ export default function Footer() {
 
       <div className="contact__base mono">
         <span>© {new Date().getFullYear()}</span>
-        <Clock />
+        <span className="contact__place"><Flag /> {site.city}, UAE</span>
         <button onClick={() => scrollTo(0, { duration: 2 })}>Back to top ↑</button>
       </div>
     </footer>

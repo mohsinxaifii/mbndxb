@@ -8,6 +8,8 @@ import { TLink } from '../lib/transition.jsx'
 import { useLightbox } from '../components/Lightbox.jsx'
 import Plate from '../components/Plate.jsx'
 import VideoTile from '../components/VideoTile.jsx'
+import Floater from '../components/Floater.jsx'
+import Flag from '../components/Flag.jsx'
 
 // One chapter per type of work. Each is shown the way that kind of work is
 // best seen; every piece keeps its true proportions.
@@ -20,6 +22,35 @@ const VIEW = {
   'web-banners': { kind: 'banners', take: 5 },
   emailers: { kind: 'mailers', take: 6 },
   print: { kind: 'strip', take: 8 },
+}
+
+// Stickers pinned loosely to some chapters. They drift with the scroll and can be dragged.
+const STICKERS = {
+  packaging: {
+    pos: { right: '8vw', top: '6vh' }, tilt: 7,
+    body: <span className="sticker sticker--flag"><Flag /> Dubai-based. Brief me from anywhere.</span>,
+  },
+  branding: {
+    pos: { left: '46vw', top: '2vh' }, tilt: -8, speed: 1.3,
+    body: (
+      <span className="sticker sticker--ink">
+        <svg viewBox="0 0 24 24" className="sticker__icon" aria-hidden="true"><path d="M12 2l2.2 6.6L21 11l-6.8 2.4L12 20l-2.2-6.6L3 11l6.8-2.4z" /></svg>
+        AI in the workflow, every single day
+      </span>
+    ),
+  },
+  'web-banners': {
+    pos: { right: '10vw', top: '4vh' }, tilt: 6, speed: 1.1,
+    body: (
+      <span className="sticker sticker--red">
+        <svg viewBox="0 0 32 20" className="sticker__icon sticker__car" aria-hidden="true">
+          <path d="M4 13l2-6c.4-1.2 1.4-2 2.7-2h12.6c1.3 0 2.3.8 2.7 2l2 6v4h-3v-2H7v2H4z" />
+          <circle cx="9" cy="13" r="1.6" /><circle cx="23" cy="13" r="1.6" />
+        </svg>
+        Dubai driving license. Happy to drive to your shoot.
+      </span>
+    ),
+  },
 }
 
 export default function Chapters() {
@@ -86,6 +117,11 @@ function Chapter({ p, n, first }) {
         </TLink>
       </header>
       <Body kind={view.kind} items={items} title={p.title} show={show} />
+      {STICKERS[p.slug] && (
+        <Floater style={STICKERS[p.slug].pos} tilt={STICKERS[p.slug].tilt} speed={STICKERS[p.slug].speed ?? 1}>
+          {STICKERS[p.slug].body}
+        </Floater>
+      )}
     </section>
   )
 }
